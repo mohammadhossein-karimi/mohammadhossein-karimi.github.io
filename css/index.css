@@ -2,19 +2,6 @@
     color: red!important;
     transition: all 0.3s linear;
 }
-#button-slider1 li:hover{
-    background-color: #000000!important;
-}
-#button-slider1 li:hover i{
-    color: white!important;
-    transition: all 0.3s linear;
-}
-#button-reduction:hover{
-    background-color: white;
-    color: #000000;
-    transition: all 0.3s linear;
-
-}
 #background-footer-navbar{
     background-color: #2f2f2f;
 }
@@ -24,27 +11,12 @@
 .background-header{
     background-color: #eeeeee;
 }
-.redius-reduction{
-    font-size: 12px;
-    padding: 6px;
-    top: 5px;
-    right: 5px;
-}
-.remove-border-and-border-redius{
-    border-radius: 0;
-    border: 0;
-}
-.font-slider{
-    font-size: 14px;
-}
+
 .font-header-title{
     font-size: 20px;
     font-weight: bold;
 }
-.custom-border-blog-card{
-    border-left: 1px solid #D1D2D4;
-    border-right: 1px solid #D1D2D4;
-}
+
 .custom-footer-border-blog-card{
     border: 1px solid #D1D2D4;
 }
@@ -60,10 +32,6 @@
     background-color: #ededed;
 }
 
-.color-text-custom{
-    color: #6a6b6d;
-    font-size: 14px;
-}
 .color-text-custom-2{
     color: #58595B;
     font-size: 12px;
@@ -82,70 +50,11 @@
     height: 60px;
     border: 1px solid #ededed;
 }
-.custom-padding{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 0px;
-}
 
-
-.date-slider{
-    background: #bfbfbf;
-    position: absolute;
-    width: 70px;
-    height: 100px;
-    font-size: 12px;
-    color: white;
-}
-.day-slider{
-    font-size: 38px;
-}
-.custom-image1-gallery{
-    position: relative;
-    width: 20%;
-    height: 80%;
-    left: 10%;
-    opacity: 0.08;
-
-}
-.custom-image2-gallery{
-    width: 55%;
-}
-.custom-image3-gallery{
-    position: relative;
-    width: 20%;
-    height: 80%;
-    right: 5%;
-    opacity: 0.08;
-}
-
-
-.background-location{
-    background-image:url("../images/background-location.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 120px 0px;
-}
 .background-link{
     background-color: #58595B;
-   
-}
-.border-footer-search-bar{
-    border-top: 2px solid #fafafa;
-    border-bottom: 2px solid #fafafa;
 }
 
-
-#button-slider1 li{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-}
-.custom-details-slider-reduction{
-    text-decoration: overline;
-}
 
 #link-menu a:first-child{
     color: red!important;
@@ -191,39 +100,10 @@
     color: rgb(255, 0, 0);
     transition: all 0.3s linear;
 }
-.list-group-item:hover{
-    color: rgb(255, 0, 0)!important;
-    transition: all 0.3s linear;
-}
+
 .nav-link:hover{
     color: rgb(0, 0, 0)!important;
     transition: all 0.3s linear;
-}
-.card img:hover{
-    cursor: pointer;
-    transform: scale(1.02);
-    transition: all 0.2s linear;
-    
-}
-.card a:hover{
-    color: rgb(255, 0, 0)!important;
-    transition: all 0.3s linear;
-}
-#slider-blog img:hover{
-    transform: none;
-}
-
-.button-left-slider:hover{
-    background-color: #f2f4f4;
-    transition: all 0.3s linear;
-    color: #000000;
-}
-
-
-.button-right-slider:hover{
-    background-color: #f2f4f4;
-    transition: all 0.3s linear;
-    color: #000000;
 }
 
 #menu-offcanvas ul li a {
@@ -245,73 +125,15 @@
     padding-top: 50px;
     padding-bottom: 0px;
 }
-    .offcanvas{
-        --bs-offcanvas-width: 576px;
+.offcanvas{
+    --bs-offcanvas-width: 576px;
     }
-.custom-padding-ads{
-    padding: 0px 0px 0px 0px;
-}
-     .card-body-custom{
-            font-size: 12px;
-            font-weight: bold;
-     }
-     .custom-margin-link{
-        margin-left: 12px;
-    }
-    
-.button-left-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    left: 10px;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.button-right-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    right: 10px;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.background-image-gallery{
-    background-image: url("../images/background-gallery-size-small.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 200px;
-}
-.padding-gallery{
-    padding-top: 75px;
-    padding-bottom: 75px;
-    background: rgba(0,0,0,0.3);
-}
-.background-form{
-    background-color: #58595B;
-    width: 64px;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
+
 .nav-link:hover{
     color: white !important;
    
 }
 
-.size-form{
-    width: 100%;
-    height: 40px;
-    position: relative;
-}
 }
 @media all and (min-width:575px) and (max-width:767px){
     .offcanvas{
@@ -321,328 +143,58 @@
         color: white !important;
         transition: none;
     }
-.custom-padding-ads{
-    padding: 0px 10px 0px 10px;
-}
-    .card-body-custom{
-           font-size: 10px;
-           font-weight: bold;
-    }
-    
-    .custom-margin-link{
-        margin-left: 8px;
-    }
-        
-.button-left-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    left: 10px;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.button-right-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    right: 10px;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.background-image-gallery{
-    background-image: url("../images/background-gallery-size-small.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 200px;
-}
-.padding-gallery{
-    padding-top: 75px;
-    padding-bottom: 75px;
-    background: rgba(0,0,0,0.3);
-}
-.background-form{
-    background-color: #58595B;
-    width: 64px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0px;
-}
 
-.size-form{
-    width: 100%;
-    height: 40px;
-    position: relative;
-}
 }
 @media all and (min-width:768px) and (max-width:991px){
-    .dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;
         right: 0%;
-      
-       
     }
-    
-.custom-padding-ads{
-    padding: 0px 10px 0px 10px;
-}
 
 .padding-menu{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-}
-    .card-body-custom{
-        font-size: 10px;
-        font-weight: bold;
- }
- 
- .custom-margin-link{
-    margin-left: 12px;
-}
-.button-left-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    left: 10px;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.button-right-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    right: 10px;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.background-form{
-    background-color: #58595B;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-.size-form{
-    width: 360px;
-    height: 40px;
-    position: relative;
-}
+    }
 }
 
 @media all and (min-width:992px) and (max-width:1199px){
-    .dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;
         right: 0%;
-
     }
-.custom-padding-ads{
-    padding: 0px 10px 0px 15px;
-}
+
 .padding-menu{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    }
 }
-    .card-body-custom{
-        font-size: 14px;
-        font-weight: bold;
- }
- .custom-margin-link{
-    margin-left: 12px;
-}
-.button-left-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    left: 10px;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.button-right-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    right: 10px;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.background-form{
-    background-color: #58595B;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-.size-form{
-    width: 360px;
-    height: 40px;
-    position: relative;
-}
-}
-
 @media all and (min-width:1200px) and (max-width:1399px){
     .dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;
         right: 0%;
-      
-       
     }
-.custom-padding-ads{
-    padding: 0px 10px 0px 25px;
-}
 
 .padding-menu{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
 }
-    .card-body-custom{
-        font-size: 11px;
-        font-weight: bold;
- }
-    .col-xl-half{
-        width:19.725%;
-    }
-    .custom-margin-link{
-        margin-left: 29px;
-    }
-    .button-left-slider{
-        width: 50px;
-        height: 50px;
-        top: 40%;
-        left:28px;
-        border-radius: 0px 10px 10px 0px;
-        box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-        background-color: #ffffff;
-        opacity: initial;
-        font-size: 30px;
-        color: black;
-    }
-    .button-right-slider{
-        width: 50px;
-        height: 50px;
-        top: 40%;
-        right: 10px;
-        border-radius: 10px 0px 0px 10px;
-        box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-        background-color: #ffffff;
-        opacity: initial;
-        font-size: 30px;
-        color: black;
-    }
-    .background-form{
-        background-color: #58595B;
-        width: 60px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0
-    }
-    
-    .size-form{
-        width: 360px;
-        height: 40px;
-        position: relative;
-    }
-    
-}
 
+}
 @media all and (min-width:1400px){
 .dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;
         right: 0%;
     }
-    
-.custom-padding-ads{
-    padding: 0px 10px 0px 35px;
-}
 .padding-menu{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-}
-.card-body-custom{
-    font-size: 12px;
-    font-weight: bold;
-    
- }
- 
-.col-xl-half{
-    width:19.725%;
- }
- .custom-margin-link{
-    margin-left: 33px;
-}
-.button-left-slider{
-    width: 50px;
-    height: 50px;
-    top: 40%;
-    left: 30px;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 5px rgb(0 0 0 / 16%);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.button-right-slider{
-    width: 50px;
-    height: 50px;
-    right: 10px;
-    top: 40%;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow:-3px 0px 5px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    opacity: initial;
-    font-size: 30px;
-    color: black;
-}
-.background-form{
-    background-color: #58595B;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-.size-form{
-    width: 360px;
-    height: 40px;
-    position: relative;
-}
-
+    }
 }
