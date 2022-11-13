@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  
+  <title>نوین چرم</title>
+</head>
+
+<body>
+
+
+  <!-- nav bar xsm sm  -->
+
+  <div class="container-fluid background-color-custom px-4 ">
+    <div class="row m-0">
+      <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+        <div>
+            <a class="text-decoration-none" href="#"  id="right-of-header">
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"aria-controls="offcanvasRight1">
+                <i class="bi bi-basket3-fill"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-4 col-sm-4 col-md-12">
+                        <div>
+                          
+                          <a class="text-decoration-none " href="#">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"aria-controls="offcanvasRight1">
+                              <i class="bi bi-basket3-fill"></i>
+                            </button>
+                          </a>
+
+                            <a class="text-decoration-none link-dark" href="#">
+                            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"aria-controls="offcanvasRight2">
+                              <i class="bi bi-search "></i>
+                            </button>
+                          </a> 
+                          <a class="text-decoration-none color-text-custom-2 " id="link-hover"  href="#">ورود/عضویت</a>
+                        </div>
+                      </div>
+                      <div class="col-8 d-md-none">
+                        <div> <a href="#">
+                          <img src="images/logo.svg" alt="" class="img-fluid">
+                        </a>
+                       </div>
+                      </div>
+                      <div class="col-12">
+                        <p class="float-end text-danger fs-5">سبد خرید</p>
+                       <button type="button" class="btn-close float-start" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offcanvas-body">
+                 <div class="text-center p-5">
+                     <i class="bi bi-basket3-fill fs-1 color-basket-icon"></i><br>
+                      <p class="fs-4 color-basket-icon">سبد خرید شما خالی است</p><br>
+                      <a class="text-decoration-none text-white p-2 mt-2 background-link custom-font-footer" href="#">رفتن به فروشگاه آنلاین</a>
+                 </div>
+                </div>
+              </div>
+            </a>
+
+              <a class="text-decoration-none" href="#">
+              <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"aria-controls="offcanvasRight2">
+                <i class="bi bi-search"></i>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                   <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 col-sm-4 col-md-12">
+                          <div>
+                            <a class="text-decoration-none " href="#">
+                              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"aria-controls="offcanvasRight1">
+                                <i class="bi bi-basket3-fill"></i>
+                              </button>
+                            </a>
+                              <a class="text-decoration-none link-dark"  href="#">
+                              <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"aria-controls="offcanvasRight2">
+                                <i class="bi bi-search "></i>
+                              </button>
+                            </a>
+                            <a class="text-decoration-none color-text-custom-2" id="link-hover" href="#">ورود/عضویت</a>
+                          </div>
+                        </div>
+                        <div class="col-8 d-md-none">
+                          <div> <a href="#">
+                            <img src="images/logo.svg" alt="" class="img-fluid">
+                          </a>
+                         </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="float-end text-danger">جستجو</p>
+                         <button type="button" class="btn-close float-start" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                  <form>
+                    <div id="icon-search">
+                    <input class=" font-size-normal-text w-75 border-end-0 border-start-0 border-top-0"  type="text" placeholder="جستجو کنید..." aria-label="Search">
+                    <i class="bi bi-arrow-left" style="cursor:pointer ;"></i>
+                  </div>
+                </form>
+                </div>
+              </div>
+              <a class="text-decoration-none color-text-custom-2 d-none d-sm-none d-md-inline-block" href="#" id="link-hover">ورود/عضویت</a>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+       <a href="#"><img src="images/logo.svg" alt="" class="img-fluid"></a> 
+      </div>
+      <div class="col-4 col-sm-4 d-md-none ">
+        
+<nav class="navbar d-md-none text-white d-block float-start ">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end text-bg-dark w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
+      <div class="offcanvas-header">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3 p-0">
+        <div class="">
+            <a class="text-decoration-none " href="#">
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"aria-controls="offcanvasRight1">
+                <i class="bi bi-basket3-fill text-white"></i>
+              </button>
+            </a>
+              <a class="text-decoration-none link-dark" href="#">
+              <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"aria-controls="offcanvasRight2">
+                <i class="bi bi-search text-white"></i>
+              </button>
+            </a>
+        </div>
+          </div>
+              <div class="col-6 text-center">
+                <a href="#"><img class="img-fluid" src="images/logo.svg" alt=""></a>
+              </div>
+
+        <div class="col-3">
+          <button type="button" class="btn-close btn-close-white float-start" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+
+      <div class="offcanvas-body">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item ">
+        <li class=" border border-1 border-white  rounded-1 font-size-normal-text p-2 mb-3" style="width:90px"> 
+          <a class="text-decoration-none text-white" href="#">ورود/عضویت</a>
+        </li>
+          
+          <a class="nav-link text-white" aria-current="page" href="#">جدید ترین ها</a>
+        </li>
+
+
+        <li class="nav-item dropdown d-lg-none d-sm-block">
+          <a class="nav-link dropdown-toggle text-white bg-dark" data-bs-toggle="dropdown"  data-bs-auto-close="outside" href="#">آقایان</a>
+          <ul class="dropdown-menu bg-dark border-0 text-end">
+            <li><a class="dropdown-item text-white bg-dark" href="#">کت مردانه</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#">کت پسرانه</a></li>
+
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle  text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کیف و کوله</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف اداری و فولدر</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف کراس بادی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف پاسپورتی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کوله پشتی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف کمری</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف گردنی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">ساک مسافرتی</a></li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle  text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کفش</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش کلاسیک</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش اسپورت</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش کالج</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">بوت و نیم بوت مردانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">صندل مردانه</a></li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کیف پول</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف کتی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف جیبی</a></li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کلاه و دستکش مردانه</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">دستکش مردانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کلاه مردانه</a></li>
+                </ul>
+              </li>
+
+          </ul>
+        </li>
+        
+        
+        <li class="nav-item dropdown d-lg-none d-sm-block">
+          <a class="nav-link dropdown-toggle text-white"  data-bs-toggle="dropdown"  data-bs-auto-close="outside" href="#">خانم ها</a>
+
+          <ul class="dropdown-menu bg-dark border-0 text-end">
+            <li><a class="dropdown-item text-white bg-dark" href="#">کت زنانه</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#">کت دخترانه</a></li>
+            
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کیف و کوله زنانه</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف دوشی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف اداری و فولدر زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف کمری</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کوله پشتی زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف کراس بادی زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف گردنی زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف پاسپورتی زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کیف آرایشی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">ساک مسافرتی زنانه</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="dropdown-item  text-white bg-dark" href="#">کیف پول زنانه</a></li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle  text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کفش زنانه</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش مجلسی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش اسپورت زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش کالج زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">بوت و نیم بوت زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">صندل زنانه</a></li> 
+                </ul>
+              </li>
+              <li><a class="dropdown-item  text-white bg-dark" href="#">کمربند زنانه</a></li>
+
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle text-white bg-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#" >کلاه و دستکش زنانه</a>
+                <ul class="dropdown-menu bg-dark border-0 text-end">
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش مجلسی</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش اسپورت زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">کفش کالج زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">بوت و نیم بوت زنانه</a></li>
+                  <li><a class="dropdown-item text-white bg-dark" href="#">صندل زنانه</a></li> 
+                </ul>
+              </li>
+              <li><a class="dropdown-item  bg-dark text-white" href="#">ست زنانه</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown d-lg-none d-sm-block">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"  data-bs-auto-close="outside" href="#">لوازم جانبی</a>
+          <ul class="dropdown-menu bg-dark border-0 text-end">
+            <li><a class="dropdown-item text-white bg-dark" href="#">جلد دسته چک</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#">جلد مدارک</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#"> جا کلیدی</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#"> جا کارتی</a></li>
+            <li><a class="dropdown-item text-white bg-dark" href="#">واکس</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">چرم بلاگ</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">بسته بندی سفارش</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" py-3 m-0" id="background-footer-navbar">
+      <a href="#" class="text-white link-secondary text-decoration-none ">باشگاه مشتریان</i></a>
+      <a href="#" class="text-white text-decoration-none link-secondary mx-1 text-uppercase fs-6 d-block float-start">faq</a>      
+      <a href="#" class="text-white link-secondary d-block float-start"><i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+  </div>
+</nav>
+      </div>
+      <div class=" col-2 col-sm-2 col-md-4 col-lg-4 col-xl-4" >
+        <div class="float-start p-3 d-none d-md-block" id="left-of-header">
+          <a href="#" class=" link-secondary"><i class="bi bi-people-fill"></i></a>
+          <a href="#" class="link-secondary  ms-3"><span class="text-decoration-none d-xl-inline-block d-lg-none d-md-none d-sm-none color-text-custom-2"> باشگاه مشتریان</span></a>
+          <a href="#" class="link-secondary border border-secondary border-top-0 border-bottom-0  py-4 px-3 d-md-none d-lg-inline" ><i class="bi bi-house-door-fill fs-6"></i></a>
+          <a href="#" class="text-decoration-none link-secondary border border-secondary border-top-0 border-bottom-0 border-end-0 py-4 px-2 color-text-custom-2"> <span> FAQ</span></a>
+          <a href="#" class="link-secondary p-2 "><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+              <!-- MEGA MENU-->
+  <nav class="navbar navbar-expand-md bg-white" >
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto  mb-2 mb-lg-0" >
+          <li class="nav-item"id="headermegamenu">
+            <a class="nav-link color-text-menu fw-bold"  href="#">جدید ترین ها</a>
+          </li>
+          <li class="nav-item dropdown dropdown-mega position-static d-none d-sm-none d-md-block ">
+            <a class="nav-link color-text-menu fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" id="button" > آقایان</a>
+            <div class="dropdown-menu">
+              <div class="mega-content px-md-4">
+                <div class="container-fluid" >
+                  <div class="row">
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5" >
+                       <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کت مردانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کت پسرانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کیف و کوله</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف اداری و فولدر</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف کراس بادی</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5">
+                      <div class="list-group text-end">
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف پاسپورتی</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کوله پشتی</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف کمری</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف گردنی</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">ساک مسافرتی</a> 
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5 ">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کمربند</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کفش</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش کلاسیک</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش اسپورت</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش کالج</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5 ">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0" href="#">بوت و نیم بوت مردانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">صندل مردانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کیف پول</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف کتی</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف جیبی</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5 ">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">ست مردانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کلاه و دستکش مردانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">دستکش مردانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کلاه مردانه</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown dropdown-mega position-static d-none d-sm-none d-md-block ">
+            <a class="nav-link color-text-menu fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> خانم ها</a>
+            <div class="dropdown-menu">
+              <div class="mega-content px-md-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="d-none d-md-flex col-md-2 col-xl-half py-4 px-xl-5 ">
+
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold">کت زنانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold">کت دخترانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold">کیف وکوله زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف دوشی</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف اداری و فولدر زنانه</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-lg-2 col-xl-half py-4 px-xl-5 ">
+                      <div class="list-group text-end">
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف کمری</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کوله پشتی زنانه</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف کراس بادی زنانه</a>
+                      <a class="list-group-item color-text-menu border-0" href="#"> کیف گردنی زنانه</a>
+                      <a class="list-group-item color-text-menu border-0" href="#">کیف پاسپورتی زنانه</a> 
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-lg-2 col-xl-half py-4 px-xl-5">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0" href="#">کیف آرایشی</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">ساک مسافرتی زنانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کیف پول زنانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کفش زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش مجلسی</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-lg-2 col-xl-half py-4 px-xl-5 ">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش اسپورت زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کفش کالج زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">بوت و نیم بوت زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">صندل زنانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">کمربند زنانه</a>
+                      </div>
+                    </div>
+
+                    <div class="d-none d-md-flex col-md-2 col-lg-2 col-xl-half py-4 px-xl-5">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold">کلاه و دستکش زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">دستکش زنانه</a>
+                        <a class="list-group-item color-text-menu border-0" href="#">کلاه زنانه</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold">ست زنانه</a> 
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown dropdown-mega position-static d-none d-md-block ">
+            <a class="nav-link color-text-menu fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> لوازم جانبی</a>
+            <div class="dropdown-menu">
+              <div class="mega-content px-md-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="d-none d-md-block col-12 py-4 px-xl-5 px-4">
+                      <div class="list-group text-end">
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">جلد دسته چک</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">جلد مدارک</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#">جا کلیدی</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#"> جا کارتی</a>
+                        <a class="list-group-item color-text-menu border-0 fw-bold" href="#"> واکس</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-text-menu fw-bold" href="#">چرم بلاگ</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link color-text-menu fw-bold" href="#">بسته بندی سفارش</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</nav>
+
+
+
+
+
+  <div class="container-fluid custom-padding mb-4 ">
+    <div class="row m-0 ">
+      <div class="col-12 col-sm-12 col-lg-9 col-md-9 col-xl-9 col-xxl-9">
+        <a href="#"><img class="img-fluid  "src="images/reduction.jpg" title="تخفیف پاییزه" alt=""></a>
+        
+      </div>
+
+      <div class="col-12 col-sm-12 col-lg-3 col-md-3 col-xl-3 col-xxl-3 p-0">
+        <div class="d-block">
+          <a href="#"><img class="img-fluid" src="images/tipax.gif" title="تیپاکس" alt=""></a>
+          <a href="#"><img class="img-fluid" src="images/deliver.jpg" title="ارسال فوری" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- reduction slider-->
+  <div class="container-fluid p-3 bg-danger ">
+    <div class="row m-0 ">
+        <div class="carousel-fade ">
+          <div class="carousel-item active">
+            <div class="row m-0">
+
+              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 my-auto">
+                <h2 class="text-center text-white">پیشنهاد<br> روز</h2>
+                <ul class=" text-center" id="button-slider1">
+                  <li class=" fs-3 text-center list-unstyled d-inline-block bg-white rounded-3 "><a href="#"><i class="bi bi-chevron-right"></i></li></a>
+                  <li class=" fs-3 text-center list-unstyled d-inline-block bg-white rounded-3 "><a href="#"><i class="bi bi-chevron-left"></i></li></a>
+                </ul>
+                <div class="text-center mt-5"><button type="button" class="btn btn-danger border border-white rounded-5 p-3" id="button-reduction" >  همه پیشنهاد ها<i class="bi bi-chevron-left me-1"></i></button></div>
+              </div>
+              
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                <div class="card rounded-4 position-relative">
+                  <img class="img-fluid rounded-4" alt="" src="images/product1-1.jpg">
+                  <div class="bg-danger text-white position-absolute d-block rounded-5 redius-reduction" style=" z-index:1;">45%<br>تخفیف</div>
+                  <div class="card-body card-body-custom ">
+                    <div class="card-title font-slider fw-bold"> <a class="link-dark text-decoration-none" href="#">کفش مجلسی زنانه ws3185 1340</a> </div>
+                    <div class="font-slider"><span class="text-danger">1,181,400 تومان</span> <span class="text-secondary text-decoration-line-through">2,148,000 تومان </span> </div>
+                    <div class="text-danger mt-2 fw-bold">فروش ویژه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 d-sm-block col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3 ">
+                <div class="card rounded-4 position-relative">
+                  <div class="bg-danger text-white position-absolute d-block rounded-5 redius-reduction" style=" z-index:1;">45%<br>تخفیف</div>
+                  <img class="img-fluid rounded-4" alt="" src="images/product1-2.jpg">
+                  <div class="card-body card-body-custom">
+                    <div class="card-title font-slider fw-bold "> <a class="link-dark text-decoration-none" href="#">کفش مجلسی زنانه ws3185 1340</a> </div>
+                    <div class="font-slider"><span class="text-danger">1,208,900 تومان</span> <span class="text-secondary text-decoration-line-through">2,198,000 تومان </span> </div>
+                    <div class="text-danger mt-2 fw-bold">فروش ویژه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-none d-sm-block col-sm-4 col-md-3  col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                <div class="card rounded-4 position-relative">
+                  <div class="bg-danger text-white position-absolute d-block rounded-5 redius-reduction"  style=" z-index:1;">45%<br>تخفیف</div>
+                  <img class="img-fluid rounded-4" alt="" src="images/product1-3.jpg">
+                  <div class="card-body card-body-custom">
+                    <div class="card-title font-slider fw-bold "> <a class="link-dark text-decoration-none" href="#">کفش مجلسی زنانه ws3185 1340</a> </div>
+                    <div class="font-slider"><span class="text-danger">1,401,400 تومان</span> <span class="text-secondary text-decoration-line-through">2,548,000 تومان </span> </div>
+                    <div class="text-danger mt-2 fw-bold">فروش ویژه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-none d-md-block col-lg-2 col-md-3 col-xl-2 col-xxl-2 mb-3">
+                <div class="card rounded-4">
+                  <div class="bg-danger text-white position-absolute d-block rounded-5 redius-reduction"  style=" z-index:1;">45%<br>تخفیف</div>
+                  <img class="img-fluid rounded-4" alt="" src="images/product1-4.jpg">
+                  <div class="card-body card-body-custom">
+                    <div class="card-title font-slider fw-bold "> <a class="link-dark text-decoration-none" href="#">کفش مجلسی زنانه ws3185 1340</a> </div>
+                    <div class="font-slider"><span class="text-danger">1,483,900 تومان</span> <span class="text-secondary text-decoration-line-through">2,698,000 تومان </span> </div>
+                    <div class="text-danger mt-2 fw-bold">فروش ویژه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-none col-md-2 d-lg-block col-lg-2 d-xxl-block col-xxl-2 mb-3">
+                <div class="card rounded-4">
+                  <div class="bg-danger text-white position-absolute d-block rounded-5 redius-reduction"  style=" z-index:1;">45%<br>تخفیف</div>
+                  <img class="img-fluid rounded-4" alt="" src="images/product1-5.jpg">
+                  <div class="card-body card-body-custom ">
+                    <div class="card-title font-slider fw-bold "> <a class="link-dark text-decoration-none" href="#">کفش مجلسی زنانه ws3185 1340</a> </div>
+                    <div class="font-slider"><span class="text-danger">1,593,900 تومان</span> <span class="text-secondary text-decoration-line-through">2,898,000 تومان </span> </div>
+                    <div class="text-danger mt-2 fw-bold">فروش ویژه</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd slider-->
+  <div class="container-fluid">
+    <div class="row m-0 custom-padding">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-1  p-xxl-0 p-xl-0 p-lg-0 ">
+        <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 px-xxl-2 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2  " > کت مردانه</div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+        <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+      <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 order-lg-1 order-xl-1 order-xxl-1  px-lg-3 px-xxl-1">
+          <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0 ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product2-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product2-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none ">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product2-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product2-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product2-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container-fluid ">
+      <div class="row m-0 custom-padding-ads ">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-2  ">
+          <a href="#">
+            <img class="img-fluid w-100 mb-3 mb-sm-3 mb-md-0 " src="images/ads-area-1-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-2  ">
+          <a href="#">
+            <img class="img-fluid w-100" src="images/ads-area-1-2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <!-- 3rd slider--> 
+  <div class="container-fluid">
+    <div class="row m-0 custom-padding">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-1  p-xxl-0 p-xl-0 p-lg-0 ">
+        <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 px-xxl-2 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > کت زنانه</div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+        <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+      <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 order-lg-1 order-xl-1 order-xxl-1  px-lg-3 px-xxl-1">
+          <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+          <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0 ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product3-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product3-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3 col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product3-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product3-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product3-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container-fluid ">
+      <div class="row m-0 custom-padding-ads" id="qwe">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-2">
+          <a href="#">
+            <img class="img-fluid w-100 mb-3 mb-sm-3 mb-md-0" src="images/ads-area-2-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  p-2  ">
+          <a href="#">
+            <img class="img-fluid w-100 " src="images/ads-area-2-2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      
+       <!-- 4th slider-->
+       <div class="container-fluid">
+        <div class="row m-0 custom-padding">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-1  p-xxl-0 p-xl-0 p-lg-0 ">
+            <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 px-xxl-2 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > کیف دوشی</div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+            <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+          <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 order-lg-1 order-xl-1 order-xxl-1  px-lg-3 px-xxl-1">
+              <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0  ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product4-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product4-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product4-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product4-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product4-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+     <!-- 5th slider-->
+     <div class="container-fluid">
+      <div class="row m-0 custom-padding">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-2  p-xxl-0 p-xl-0 p-lg-0 ">
+          <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > بوت و نیم بوت زنانه</div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+          <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+        <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-8 order-lg-1 order-xl-1 order-xxl-1  px-lg-3">
+            <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0  ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product5-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product5-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none ">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product5-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product5-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product5-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- 6th slider-->
+      <div class="container-fluid">
+        <div class="row m-0 custom-padding">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-1  p-xxl-0 p-xl-0 p-lg-0 ">
+            <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 px-xxl-2 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > کفش کالج</div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+            <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+          <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 order-lg-1 order-xl-1 order-xxl-1  px-lg-3 px-xxl-1">
+              <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0  ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product6-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product6-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product6-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product6-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product6-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- 7th slider-->
+    <div class="container-fluid">
+      <div class="row m-0 custom-padding">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-2  p-xxl-0 p-xl-0 p-lg-0 ">
+          <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0  ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > بوت و نیم بوت مردانه</div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+          <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+        <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-8 order-lg-1 order-xl-1 order-xxl-1 px-lg-3 px-xxl-1">
+            <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+            <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0  ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product7-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>       
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product7-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>     
+                    </div>
+                    <span class=" color-text-custom text-center user-select-none">12,598,000 تومان</span>
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product7-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product7-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product7-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- 8th slider-->
+      <div class="container-fluid">
+        <div class="row m-0 custom-padding">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-xxl-1  p-xxl-0 p-xl-0 p-lg-0 ">
+            <div class="d-inline-block font-header-title border border-1 border-secondary border-bottom-0 border-top-0 border-end-0 px-xxl-2 ps-xl-2 pe-xl-1 ps-md-1 ps-sm-2 ps-2 " > کت مردانه</div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 order-lg-2 order-xl-2 order-xxl-2">
+            <a class="text-decoration-none link-dark float-start color-text-custom p-xxl-3 " id="button-observe-all" href="#">مشاهده همه<i class="bi bi-chevron-left"></i></a></div>
+          <div class="text-end col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 order-lg-1 order-xl-1 order-xxl-1  px-lg-3 px-xxl-1">
+              <ul class="text-xl-end text-xxl-end text-lg-end text-md-center text-sm-center text-center pe-0">
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom " id="link-menu"> <a class="pb-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">جدید ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary mx-2 text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#">پر فروش ترین ها</a></li>
+              <li class="list-unstyled text-center d-inline-block color-text-custom color-text-custom "> <a class="pb-2 link-secondary text-decoration-none border border-danger border-bottom border-end-0 border-top-0 border-start-0" href="#"> پر بازدید ترین ها</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="carousel-fade custom-padding pt-0  ">
+          <div class="carousel-item active">
+              <div class="row m-0">
+                <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <i class="bi bi-chevron-left"></i>
+                  
+                </button>
+                <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-half">
+                    <div class="card remove-border-and-border-redius ">
+                      <a href="#"><img class="img-fluid" src="images/product8-1.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#"> کت مردانه ژوبین Mnt5682</a>
+                      </div>
+                      <span class="color-text-custom text-center user-select-none">11,198,000تومان</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"> <img class="img-fluid" src="images/product8-2.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5467 PHILIP</a>
+                      <span class=" color-text-custom text-center ">12,598,000 تومان</span>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product8-3.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#"> کت مردانه MNT5345 MARIO</a>
+                     </div>
+                     <span class="color-text-custom text-center user-select-none">10,998,000 تومان</span>
+                  </div>
+                   
+                </div>
+                <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product8-4.jpg" alt=""></a>
+                    <div class="card-body text-center fw-bold color-text-custom pb-0">
+                      <a class="text-decoration-none color-text-custom" href="#">کت مردانه ژوبین MNT5682</a>
+                    </div>
+                    <span class="color-text-custom text-center user-select-none">11,198,000 تومان</span>
+                  </div>
+                    
+                </div>
+                <div class="d-none d-xl-block  col-xl-half">
+                  <div class="card remove-border-and-border-redius">
+                    <a href="#"><img class="img-fluid" src="images/product8-5.jpg" alt=""></a>
+                      <div class="card-body text-center fw-bold color-text-custom pb-0">
+                        <a class="text-decoration-none color-text-custom" href="#">کت مردانه جاسنون MNT5497</a>
+                      </div>
+                        <span class="color-text-custom text-center user-select-none">10,498,000تومان</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ">
+        <div class="row m-0 custom-padding-ads">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-2">
+            <a href="#">
+              <img class="img-fluid w-100 mb-3 mb-sm-3 mb-md-0 " src="images/ads-area-3-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-2">
+            <a href="#">
+              <img class="img-fluid w-100 " src="images/ads-area-3-2.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row m-0 custom-padding ">
+          <div class="col-12 col-sm-12 d-md-none p-0">
+            <div class="background-image-gallery  ">
+            <div class="padding-gallery text-white text-center"><h6>گالری تصاویر</h6> <span>مشاهده همه</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 custom-padding pt-0 ">
+        <div class="d-none d-sm-none  d-md-block col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center text-danger"><h4>گالری تصاویر</h4></div>
+        <div class=" d-none d-sm-none  d-md-block col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+          <a href="#"><img class="img-fluid custom-image1-gallery" src="images/gallery1.jpg" alt=""></a>
+          <a href="#"><img class="img-fluid custom-image2-gallery" src="images/gallery2.jpg" alt=""></a>
+          <a href="#"><img class="img-fluid custom-image3-gallery" src="images/gallery3.jpg" alt=""></a>
+          
+          
+        </div>
+        
+        <div class="d-none d-sm-none  d-md-block col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center"> <a class="text-decoration-none link-dark color-text-custom" id="button-observe-all" href="#">مشاهده همه</a></div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-5">
+      <div class="row m-0 custom-padding-ads ">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 background-location text-center ">
+          <p class="background-link d-inline p-3 text-white"> یافتن آدرس و ساعات کاری فروشگاه های نزدیک به شما<i class="fa fa-search pe-4 d-none d-sm-none d-md-inline me-5"></i></p>
+          </div>
+      </div>
+    </div>
+
+      <!--blog-slider-->
+
+      <div class="container-fluid background-color-custom  pb-5 user-select-none" >
+        <div class="row m-0 ">
+          <div class="carousel-fade custom-padding-slider-blog ">
+              <div class="carousel-item active" >
+                  <div class="row m-0 pb-4"id="slider-blog">
+                    <div class="col-12 text-danger font-header-title "><h4 class="fw-normal py-3">آخرین پست های وبلاگ</h4></div>
+                    <button class="carousel-control-prev button-left-slider " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <i class="bi bi-chevron-left"></i>
+                      
+                    </button>
+                    <button class="carousel-control-next button-right-slider" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-half" id="slider-blog">
+                        <div class="card remove-border-and-border-redius" >
+                          <a href="#"> <div class="date-slider"> <span class="d-block text-center day-slider">19</span> <span class="d-block text-center">مرداد</span> <span class="d-block text-center">1401</span> </div> <img class="img-fluid" src="images/blog-1.jpg"  alt=""></a>
+                            <div class="card-body text-center fw-bold text-secondary custom-border-blog-card  px-4 py-3">
+                            <div class="text-end font-size-normal-text"><a class="text-decoration-none link-dark" href="#"><i class="bi bi-folder2"></i>صنعت چرم</a></div>
+                            <div class="text-end mb-4"><a class="text-decoration-none link-secondary fw-bold fs-5" href="#" >خرید اینترنتی محصولات چرم چه مزایا و معایبی دارد؟</a></div>
+                            <div class="text-end font-size-normal-text ">در این مقاله از چرم بلاگ به طور مختصر به بررسی مزایا و معایب خرید اینترنتی محصولات چرم می‌پردازیم.</div>  
+                          </div>
+                          <div class="text-end custom-footer-border-blog-card px-4 py-3 font-size-normal-text "><i class="bi bi-chat-left"></i> 0 نظر ارسال شده</div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-6 col-md-4 col-lg-3  col-xl-half">
+                      <div class="card remove-border-and-border-redius">
+                        <a href="#"><div class="date-slider"> <span class="d-block text-center day-slider">19</span> <span class="d-block text-center">مرداد</span> <span class="d-block text-center">1401</span> </div><img class="img-fluid" src="images/blog-2.jpg" alt=""></a>
+                        <div class="card-body  text-center fw-bold text-secondary custom-border-blog-card  px-4 py-3">
+                          <div class="text-end font-size-normal-text"><a class="text-decoration-none link-dark" href="#"><i class="bi bi-folder2"></i>صنعت چرم</a></div>
+                          <div class="text-end mb-4"><a class="text-decoration-none link-secondary fw-bold fs-5" href="#" >چرم دانه اصلاح شده و تاثیر آن بر کیفیت کالاهای چرمی</a></div>
+                          <div class="text-end font-size-normal-text">در این مقاله از چرم بلاگ به طور مختصر به بررسی مزایا و معایب خرید اینترنتی محصولات چرم می‌پردازیم.</div>
+                        </div>
+                        <div class="text-end custom-footer-border-blog-card px-4 py-3 font-size-normal-text"><i class="bi bi-chat-left"></i> 0 نظر ارسال شده</div>
+                    </div>
+    
+                    </div>
+                    <div class="d-none d-sm-none d-md-block col-md-4 col-lg-3  col-xl-half">
+                      <div class="card remove-border-and-border-redius">
+                        <a href="#"><div class="date-slider"> <span class="d-block text-center day-slider">19</span> <span class="d-block text-center">مرداد</span> <span class="d-block text-center">1401</span> </div><img class="img-fluid" src="images/blog-3.jpg" alt=""></a>
+                        <div class="card-body  text-center fw-bold text-secondary custom-border-blog-card px-4 py-3">
+                          <div class="text-end font-size-normal-text"><a class="text-decoration-none link-dark" href="#"><i class="bi bi-folder2"></i>جشنواره</a></div>
+                          <div class="text-end mb-4"><a class="text-decoration-none link-secondary fw-bold fs-5" href="#" >چرم دانه اصلاح شده و تاثیر آن بر کیفیت کالاهای چرمی</a></div>
+                          <div class="text-end font-size-normal-text font-size-normal-text ">در این مقاله از چرم بلاگ به طور مختصر به بررسی مزایا و معایب خرید اینترنتی محصولات چرم می‌پردازیم.</div> 
+                        </div>
+                        <div class="text-end custom-footer-border-blog-card px-4 py-3 font-size-normal-text"><i class="bi bi-chat-left"></i> 0 نظر ارسال شده</div>
+                      </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-3  col-xl-half">
+                      <div class="card remove-border-and-border-redius ">
+                        <a href="#"><div class="date-slider"> <span class="d-block text-center day-slider">19</span> <span class="d-block text-center">مرداد</span> <span class="d-block text-center">1401</span> </div><img class="img-fluid" src="images/blog-4.jpg" alt=""></a>
+                        <div class="card-body  text-center fw-bold text-secondary custom-border-blog-card px-4 py-3">
+                          <div class="text-end font-size-normal-text"><a class="text-decoration-none link-dark" href="#"><i class="bi bi-folder2"></i>جشنواره</a></div>
+                          <div class="text-end mb-4"><a class="text-decoration-none link-secondary fw-bold fs-5" href="#" >چرم دانه اصلاح شده و تاثیر آن بر کیفیت کالاهای چرمی</a></div>
+                          <div class="text-end font-size-normal-text font-size-normal-text">در این مقاله از چرم بلاگ به طور مختصر به بررسی مزایا و معایب خرید اینترنتی محصولات چرم می‌پردازیم.</div>
+                          
+                        </div>
+                        <div class="text-end custom-footer-border-blog-card px-4 py-3 font-size-normal-text"><i class="bi bi-chat-left"></i> 0 نظر ارسال شده</div>
+                      </div>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-half">
+                      <div class="card remove-border-and-border-redius">
+                        <a href="#"><div class="date-slider"> <span class="d-block text-center day-slider">19</span> <span class="d-block text-center">مرداد</span> <span class="d-block text-center">1401</span> </div><img class="img-fluid" src="images/blog-5.jpg" alt=""></a>
+                        <div class="card-body text-center fw-bold text-secondary custom-border-blog-card px-4 py-3">
+                          <div class="text-end  font-size-normal-text"><a class="text-decoration-none link-dark" href="#"><i class="bi bi-folder2"></i>جشنواره</a></div>
+                          <div class="text-end mb-4"><a class="text-decoration-none link-secondary fw-bold fs-5" href="#" >چرم دانه اصلاح شده و تاثیر آن بر کیفیت کالاهای چرمی</a></div>
+                          <div class="text-end font-size-normal-text font-size-normal-text">در این مقاله از چرم بلاگ به طور مختصر به بررسی مزایا و معایب خرید اینترنتی محصولات چرم می‌پردازیم.</div>                                
+                        </div>
+                        <div class="text-end custom-footer-border-blog-card px-4 py-3 font-size-normal-text "><i class="bi bi-chat-left"></i> 0 نظر ارسال شده</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--footer-->
+        <div class="container-fluid mt-4 ">
+          <div class="row m-0 px-4 mb-4 border-footer-search-bar py-4">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
+        <form class="">
+          <p class="font-size-footer-heading float-sm-none text-sm-center float-none text-center float-md-end ms-xl-5 ms-xxl-5 ">از تخفیف‌ها و جدیدترین‌های نوین‌چرم باخبر شوید!</p>   
+          <div class="size-form float-xxl-end float-xl-end float-lg-start float-md-start">
+          <input class=" form-control rounded-0 font-size-normal-text border border-1 border-dark w-100 h-100" type="search" placeholder="آدرس ایمیل یا شماره موبایل خود را وارد کنید" aria-label="Search">
+          <button class="border border-1 border-end-0 background-form text-white " id="footer-submit" type="submit">تایید</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+          <div class="row m-0">
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" id="list-footer">
+              <ul class="list-unstyled lh-lg">
+              <li class="font-size-normal-text">
+                <a class="text-decoration-none link-dark " href="#"><i class="bi bi-globe"> </i>change languag</a> <p>English language</p>
+
+              </li>
+              <li> <a class="text-decoration-none color-text-custom-2" href="#"><i class="fa fa-rss"></i>تازه ترین اخبار</a> <p class="color-text-custom-2">تازه ترین اخبار و اطلاعیه های نوین چرم</p> </li>
+              <li> <a class="text-decoration-none color-text-custom-2" href="#"><i class="bi bi-play-circle"></i>چند رسانه ای</a><p class="color-text-custom-2">تصاویر،ویدیوها و کاتالوگ ها</p> </li>
+              <li> <a class="text-decoration-none color-text-custom-2" href="#"><i class="bi bi-info-circle"></i>درباره نوین چرم</a> </li>
+              <li class="color-text-custom-2"> <i class="bi bi-telephone-fill"></i>تماس با ما</li>
+            </ul>
+          </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" id="list-footer">
+              <ul class="list-unstyled lh-lg">
+              <li><a class="text-decoration-none font-size-footer-heading fw-bold" href="#">خدمات مشتریان</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">سوالات متداول</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">خدمات پس از فروش</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">شارژ کارت باشگاه مشتریان</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">نگهداری از محصولات چرمی</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">شیوه تعویض و عودت محصول</a></li>
+            </ul>
+          </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" id="list-footer">
+              <ul class="list-unstyled lh-lg">
+              <li><a class="text-decoration-none  font-size-footer-heading fw-bold" href="#">با نوین چرم</a></li>
+              <li><a class="text-decoration-none  color-text-custom-2" href="#">فروش سازمانی</a></li>
+              <li><a class="text-decoration-none  color-text-custom-2" href="#">آدرس فروشگاه ها</a></li>
+              <li><a class="text-decoration-none  color-text-custom-2" href="#">همکاری با ما</a></li>
+              <li><a class="text-decoration-none  color-text-custom-2" href="#">چرم بلاگ</a></li>
+            </ul>
+          </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2 " id="list-footer">
+              <ul class="list-unstyled lh-lg">
+              <li><a class="text-decoration-none font-size-footer-heading fw-bold" href="#">راهنمای خرید آنلاین</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">شرایط و مقررات</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">نحوه ثبت سفارش</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">روش های پرداخت سفارش</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">شیوه های ارسال سفارش</a></li>
+              <li><a class="text-decoration-none color-text-custom-2" href="#">پیگیری سفارش آنلاین</a></li>
+            </ul>
+          </div>
+            <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1 text-center " id="last-list-footer">
+              <ul class="list-unstyled">
+              <li class=" d-inline-block color-text-custom-2 text-center custom-font-footer mb-3"><i class="bi bi-credit-card fs-4"></i> <p>پرداخت اینترنتی</p> </li>
+              <li class=" d-inline-block color-text-custom-2 text-center custom-font-footer"><i class="fa fa-truck fs-3 py-1"></i> <p>ارسال سفارش</p> </li>
+            </ul>
+          </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center" id="list-footer">
+              <ul class="list-unstyled mx-4">
+              <li class="d-inline-block "><a href="#"><img class="img-fluid" src="images/logo-trust2.png" alt=""></a></li>
+              <li class="d-inline-block "><a href="#"><img class="img-fluid" src="images/logo-trust1.png" alt=""></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      <div>
+          <p class="text-start border border-1 border-secondary  border-end-0 border-bottom-0 border-start-0 color-text-custom-2 ">  .All Rights Reserved نوین چرم<i class="bi bi-c-circle"></i>copyright 2022</p>
+      </div>
+  </body>
+</html>
