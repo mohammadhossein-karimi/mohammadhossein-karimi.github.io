@@ -22,39 +22,37 @@
         if(xhttp.readyState==4 && xhttp.status==200){
           let jsd=JSON.parse(xhttp.responseText)
           let op=''
+          let oop=''
         for(x in jsd){
           if(jsd[x].price==0){
-          op+="<div class='d-none col-6 col-sm-6 col-md-4 col-lg-3'>"
+          op+="<div class='d-none '>"
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
           op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
           op+="</div>"
           op+="</div>"
-          op+="</div>"; 
+          op+="</div>";
             
-          }else{
-          op+="<div class='col-6 col-sm-6 col-md-4 col-lg-2'>"
+          }else if(jsd[x].price!=0){
+          op+="<div class=' col-6 col-sm-6 col-md-4 col-lg-2'>"
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
           op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
           op+="<span>"+"قیمت"+jsd[x].price+'تومان '+"</span>"+"<br>"
-          op+="<span>"+"مناسب برای "+jsd[x].gender+"</span>"+"<br>"
-          op+="<span>"+"دسته بندی:"+jsd[x].subgroup+"</span>"+"<br>"
+          op+="<span>"+"دسته بندی:"+jsd[x].gender+"</span>"+"<br>"
+          op+="<span>"+"زیر گروه:"+jsd[x].subgroup+"</span>"+"<br>"
           op+="</div>"
           op+="</div>"
-          op+="</div>"; 
+          op+="</div>";
           }
-
         }
          document.querySelector("#targ").innerHTML=op
          let a=document.querySelectorAll("#targ div img");
          for(var i=0;i<a.length;i++){
           a[i].src=jsd[i].source
          }
-         
-        
         }
       }
         xhttp.open('GET','products.json',true)
@@ -74,12 +72,6 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row" id="targ">
-    
-  </div>
-</div>
-
   <!-- nav bar xsm sm  -->
 
   <div class="container-fluid background-color-custom px-4 ">
@@ -542,8 +534,26 @@
   </div>
 </nav>
 
-
-
+<div class="container-fluid mb-5">
+  <div class="row">
+      <div class="col-2" id="filter">
+        <select class="form-select">
+          <option selected>مرتب سازی بر اساس</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select> 
+    </div>
+    <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+      <div class="container-fluid">
+        <div class="row" id="targ">
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--footer-->
           <div class="row m-0">
