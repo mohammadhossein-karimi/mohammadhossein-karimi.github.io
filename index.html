@@ -12,13 +12,73 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  
-  <title>نوین چرم</title>
+    <title>نوین چرم</title>
+    <script>
+   
+    window.addEventListener('DOMContentLoaded', function(){
+      function loadData1(){
+      let xhttp=new XMLHttpRequest();
+      xhttp.onreadystatechange= function(){
+        if(xhttp.readyState==4 && xhttp.status==200){
+          let jsd=JSON.parse(xhttp.responseText)
+          let op=''
+        for(x in jsd){
+          if(jsd[x].price==0){
+          op+="<div class='d-none col-6 col-sm-6 col-md-4 col-lg-3'>"
+          op+="<div class='card'>"
+          op+="<img class='img-fluid' src=images/11210.jpg>"  
+          op+="<div class='card-body'>"
+          op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
+          op+="</div>"
+          op+="</div>"
+          op+="</div>"; 
+            
+          }else{
+          op+="<div class='col-6 col-sm-6 col-md-4 col-lg-2'>"
+          op+="<div class='card'>"
+          op+="<img class='img-fluid' src=images/11210.jpg>"  
+          op+="<div class='card-body'>"
+          op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
+          op+="<span>"+"قیمت"+jsd[x].price+'تومان '+"</span>"+"<br>"
+          op+="<span>"+"مناسب برای "+jsd[x].gender+"</span>"+"<br>"
+          op+="<span>"+"دسته بندی:"+jsd[x].subgroup+"</span>"+"<br>"
+          op+="</div>"
+          op+="</div>"
+          op+="</div>"; 
+          }
+
+        }
+         document.querySelector("#targ").innerHTML=op
+         let a=document.querySelectorAll("#targ div img");
+         for(var i=0;i<a.length;i++){
+          a[i].src=jsd[i].source
+         }
+         
+        
+        }
+      }
+        xhttp.open('GET','products.json',true)
+        xhttp.send()
+      }
+      document.querySelector('#sasa').addEventListener('click',function(){ 
+        loadData1();
+    
+      })
+      
+
+    })
+
+
+</script>
+
 </head>
 
 <body>
-
+  <div class="container-fluid">
+    <div class="row" id="targ">
+    
+  </div>
+</div>
 
   <!-- nav bar xsm sm  -->
 
@@ -545,15 +605,9 @@
       <div>
           <p class="text-start border border-1 border-secondary  border-end-0 border-bottom-0 border-start-0 color-text-custom-2 ">  .All Rights Reserved نوین چرم<i class="bi bi-c-circle"></i>copyright 2022</p>
       </div>
+      <button id="sasa">sasa</button>
   </body>
 
   
-  <script>
-   
-    window.addEventListener('DOMContentLoaded', function(){
 
-    })
-
-
-</script>
 </html>
