@@ -15,9 +15,8 @@
   <script src="js/jquery.js"></script>
     <title>نوین چرم</title>
     <script>
-   
+      
     window.addEventListener('DOMContentLoaded', function(){
-    
       let xhttp=new XMLHttpRequest();
       xhttp.onreadystatechange= function(){
         if(xhttp.readyState==4 && xhttp.status==200){
@@ -27,16 +26,19 @@
          
         for(x in jsd){
           if(jsd[x].price==0){
-          op+="<div class='d-none '>"
+          op+="<div class='col-6 col-sm-6 col-md-4 col-lg-2'>"
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="کد محصول:"+"<span>"+jsd[x].id+"</span>"+"<br>"
+            op+="کد محصول:"+"<span>"+jsd[x].id+"</span>"+"<br>"
+          op+="<span>"+"قیمت"+jsd[x].price+'تومان '+"</span>"+"<br>"
+          op+="<span>"+"نام محصول:"+jsd[x].subgroup+"</span>"+"<br>"
           op+="</div>"
           op+="</div>"
           op+="</div>";
             
-          }else if(jsd[x].price!=0 &&  jsd[x]["discount percent"]==0){
+          }
+          else if(jsd[x].price!=0 &&  jsd[x]["discount percent"]==0){
           op+="<div class=' col-6 col-sm-6 col-md-4 col-lg-2'>"
           op+="<div class='card '>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
@@ -66,449 +68,95 @@
           op+="</div>";
           }
         }
-
-        //آقایان
-        document.querySelector("#collapse5 ul li:nth-child(1)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].gender!="آقایان" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-          for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
-      })
+        
+      var check=document.querySelectorAll("#checkBox_division input[type=checkboX]")
+      check.forEach(elem => elem.addEventListener('change',function(){
+        filter(check[0].checked,check[1].checked,check[2].checked)
+      }))
+      
+      document.querySelector("#collapse5 ul li:nth-child(1)").addEventListener("click",function(){
+        func_gender("آقایان")
+        filter(check1,check2,check3)
+      });
       //خانم ها
       document.querySelector("#collapse5 ul li:nth-child(2)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].gender!="خانم ها" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_gender("خانم ها")
       })
-
-
       //کت مردانه
       document.querySelector("#collapse2 ul li:nth-child(1)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کت مردانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کت مردانه")
       })
       document.querySelector("#collapse2 ul li:nth-child(2)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کت پسرانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کت پسرانه")
       })
       document.querySelector("#collapse2 ul li:nth-child(3)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کیف کوله" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کیف و کوله")
       })
-
-
       document.querySelector("#collapse2 ul li:nth-child(4)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کفش" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کفش")
       })
-      
       document.querySelector("#collapse2 ul li:nth-child(5)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کیف پول" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کیف پول")
       })
-      
       document.querySelector("#collapse2 ul li:nth-child(6)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کلاه و دستکش مردانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کلاه و دستکش مردانه")
       })
-
-      
-
       document.querySelector("#collapse3 ul li:nth-child(1)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کت زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کت زنانه")
       })
-      
-
-      
       document.querySelector("#collapse3 ul li:nth-child(2)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کت دخترانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کت دخترانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(3)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کیف و کوله زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کیف و کوله زنانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(4)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کیف پول زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کیف پول زنانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(5)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کفش زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کفش زنانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(6)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کمربند زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کمربند زنانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(7)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="کلاه و دستکش زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("کلاه و دستکش زنانه")
       })
       
       document.querySelector("#collapse3 ul li:nth-child(8)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="ست زنانه" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("ست زنانه")
       })
-
-
-      
       document.querySelector("#collapse4 ul li:nth-child(1)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="جلد دسته چک" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("جلد دسته چک")
       })
 
       
       document.querySelector("#collapse4 ul li:nth-child(2)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="جلد مدارک" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("جلد مدارک")
       })
 
       
       document.querySelector("#collapse4 ul li:nth-child(3)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="جا-کلیدی" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("جا کلیدی")
       })
 
       
       document.querySelector("#collapse4 ul li:nth-child(4)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="جا کارتی" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("جا کارتی")
       })
 
       
       document.querySelector("#collapse4 ul li:nth-child(5)").addEventListener("click",function(){
-          var array=new Array();
-          for(var i=0;i<jsd.length;i++){
-          if(jsd[i].Grouping!="واکس" && jsd[i].Exist=="yes"){
-            array.push(jsd[i].id);
-          }
-        }console.log(array)
-          var all=document.querySelectorAll(".card-body span:nth-child(1)")
-            for (var i=0;i<all.length;i++){
-              all[i].parentNode.parentNode.parentNode.style.display="block"
-           }
-          for (var i=0;i<all.length;i++){
-           for(var j=0;j<array.length;j++){
-            if(parseInt(all[i].innerHTML)==array[j]){
-             all[i].parentNode.parentNode.parentNode.style.display="none"
-           }
-          }
-        }
+        func_grouping("واکس")
       })
       
-      
-      
-
-
-
-
-
-
-
          document.querySelector("#targ").innerHTML=op
+         
          let a=document.querySelectorAll("#targ div img");
          for(var i=0;i<a.length;i++){
           a[i].src=jsd[i].source
@@ -518,7 +166,182 @@
         xhttp.open('GET','products.json',true)
         xhttp.send()
     })
+   
+</script>
+<script>
+function func_gender(grouping){
 
+fetch("products.json")
+    .then(response => response.json())
+    .then( data => {
+
+      var array=new Array();
+    for(var i=0;i<data.length;i++){
+    if(data[i].gender!=grouping && data[i].Exist=="yes"){
+      array.push(data[i].id);
+    }
+  }
+    var all=document.querySelectorAll(".card-body span:nth-child(1)")
+
+    for (var i=0;i<all.length;i++){
+        all[i].parentNode.parentNode.parentNode.style.display="block"
+
+     }
+    for (var i=0;i<all.length;i++){
+     for(var j=0;j<array.length;j++){
+
+      if(parseInt(all[i].innerHTML)==array[j]){
+       all[i].parentNode.parentNode.parentNode.style.display="none"
+     }
+    }
+  }
+    })
+
+}
+function func_grouping(grouping){
+
+fetch("products.json")
+    .then(response => response.json())
+    .then( data => {
+
+      var array=new Array();
+    for(var i=0;i<data.length;i++){
+    if(data[i].Grouping!=grouping && data[i].Exist=="yes"){
+      array.push(data[i].id);
+    }
+  }
+    var all=document.querySelectorAll(".card-body span:nth-child(1)")
+
+    for (var i=0;i<all.length;i++){
+        all[i].parentNode.parentNode.parentNode.style.display="block"
+
+     }
+    for (var i=0;i<all.length;i++){
+     for(var j=0;j<array.length;j++){
+
+      if(parseInt(all[i].innerHTML)==array[j]){
+       all[i].parentNode.parentNode.parentNode.style.display="none"
+     }
+    }
+  }
+    })
+
+}
+
+function filter(check1,check2,check3){
+var a,b,c;
+var array=new Array();
+fetch("products.json")
+    .then(response => response.json())
+    .then( data => {
+
+      if(check1){
+        a="yes"
+      }else{
+        a="no"
+      }
+      
+      if(check2){
+        b="yes"
+      }else{
+        b="no"
+      }
+
+
+
+      if(check1){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+         if(data[i][["Immediate delivery"]]!=a){
+          array.push(data[i].id);
+         }
+        }  
+      }
+      if(check2){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+         if(data[i].Exist!=b){
+          array.push(data[i].id);
+         }
+        }  
+      }
+      if(check3){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+         if(data[i]["discount percent"]==0){
+          array.push(data[i].id);
+         }
+        }  
+      }
+
+      if(check1 && check2){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+          //console.log(typeof data[i]["discount percent"],typeof c)
+         if(data[i][["Immediate delivery"]]!=a && data[i].Exist!=b){
+          array.push(data[i].id);
+         }
+        }  
+      }
+
+      
+      if(check1 && check3){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+          //console.log(typeof data[i]["discount percent"],typeof c)
+         if(data[i][["Immediate delivery"]]!=a && data[i]["discount percent"]==0){
+          array.push(data[i].id);
+         }
+        }  
+      }
+
+      
+      if(check2 && check3){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+          //console.log(typeof data[i]["discount percent"],typeof c)
+         if(data[i].Exist!=b && data[i]["discount percent"]==0){
+          array.push(data[i].id);
+         }
+        }  
+      }
+
+
+      
+      if(check1 && check2 && check3){
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+          //console.log(typeof data[i]["discount percent"],typeof c)
+         if(data[i][["Immediate delivery"]]!=a && data[i].Exist!=b && data[i]["discount percent"]==0){
+          array.push(data[i].id);
+         }
+        }  
+      }
+
+      
+
+
+    var all=document.querySelectorAll(".card-body span:nth-child(1)")
+    for (var i=0;i<all.length;i++){
+        all[i].parentNode.parentNode.parentNode.style.display="block"
+     }
+    for (var i=0;i<array.length;i++){
+     for(var j=0;j<all.length;j++){
+      //console.log(parseInt(all[j].innerHTML),array[i])
+      if(parseInt(all[j].innerHTML)==array[i]){
+       all[j].parentNode.parentNode.parentNode.style.display="none"
+     }
+    }
+  }
+    })
+  }
 
 </script>
 
@@ -1141,23 +964,6 @@
           </div>
 
           <div class="accordion-item">
-            <h2 class="accordion-header" id="heading7">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                خدمات
-              </button>
-            </h2>
-            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample7">
-              <div class="accordion-body p-0">
-                <ul class="list-group rounded-0 p-0">
-                  <li class="list-group-item border border-start-0 border-end-0">ارسال فوری</li>
-                  <li class="list-group-item border border-start-0 border-end-0">موجود بودن</li>
-                  <li class="list-group-item border border-start-0 border-end-0">تخفیف داشتن</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
             <h2 class="accordion-header" id="heading8">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 قیمت
@@ -1175,7 +981,21 @@
               </div>
             </div>
           </div>
+          <div class="col-12" id="checkBox_division">
+            <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">ارسال فوری</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">موجود بودن</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">داری تخفیف</label>
+          </div>
         </div>
+      </div>
     </div>
  
     <div class="col-10 col-sm-10 col-md-10 col-lg-10">

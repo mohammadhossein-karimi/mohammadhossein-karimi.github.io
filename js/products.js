@@ -7,6 +7,7 @@
     "discount percent": 0,
     "price": 12450000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11210.jpg"
   },
   {
@@ -17,6 +18,7 @@
     "discount percent": 20,
     "price": 8652000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11350.jpg"
   },
   {
@@ -27,6 +29,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11215.jpg"
   },
   {
@@ -37,6 +40,7 @@
     "discount percent": 10,
     "price": 698500,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11260.jpg"
   },
   {
@@ -47,6 +51,7 @@
     "discount percent": 0,
     "price": 4725000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11270.jpg"
   },
   {
@@ -57,6 +62,7 @@
     "discount percent": 0,
     "price": 2995000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11355.jpg"
   },
   {
@@ -67,6 +73,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11365.jpg"
   },
   {
@@ -77,6 +84,7 @@
     "discount percent": 40,
     "price": 7684000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11305.jpg"
   },
   {
@@ -87,6 +95,7 @@
     "discount percent": 20,
     "price": 6354000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11310.jpg"
   },
   {
@@ -97,6 +106,7 @@
     "discount percent": 0,
     "price": 9248000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11435.jpg"
   },
   {
@@ -107,6 +117,7 @@
     "discount percent": 30,
     "price": 8475000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11440.jpg"
   },
   {
@@ -117,6 +128,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11360.jpg"
   },
   {
@@ -127,6 +139,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11390.jpg"
   },
   {
@@ -137,6 +150,7 @@
     "discount percent": 0,
     "price": 1100000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11395.jpg"
   },
   {
@@ -147,6 +161,7 @@
     "discount percent": 0,
     "price": 900000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11385.jpg"
   },
   {
@@ -157,6 +172,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11200.jpg"
   },
   {
@@ -167,6 +183,7 @@
     "discount percent": 0,
     "price": 2600000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11225.jpg"
   },
   {
@@ -177,6 +194,7 @@
     "discount percent": 0,
     "price": 2420000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11230.jpg"
   },
   {
@@ -187,6 +205,7 @@
     "discount percent": 0,
     "price": 1598000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11265.jpg"
   },
   {
@@ -197,6 +216,7 @@
     "discount percent": 10,
     "price": 2478000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11235.jpg"
   },
   {
@@ -207,6 +227,7 @@
     "discount percent": 15,
     "price": 3650000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11315.jpg"
   },
   {
@@ -217,6 +238,7 @@
     "discount percent": 0,
     "price": 3145000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11320.jpg"
   },
   {
@@ -227,6 +249,7 @@
     "discount percent": 0,
     "price": 2870000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11240.jpg"
   },
   {
@@ -237,6 +260,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11285.jpg"
   },
   {
@@ -247,6 +271,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11290.jpg"
   },
   {
@@ -257,6 +282,7 @@
     "discount percent": 10,
     "price": 6500000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11205.jpg"
   },
   {
@@ -267,6 +293,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11220.jpg"
   },
   {
@@ -277,6 +304,7 @@
     "discount percent": 15,
     "price": 3658000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11400.jpg"
   },
   {
@@ -287,6 +315,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11405.jpg"
   },
   {
@@ -297,6 +326,7 @@
     "discount percent": 35,
     "price": 2220000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11330.jpg"
   },
   {
@@ -307,6 +337,7 @@
     "discount percent": 10,
     "price": 3614000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11335.jpg"
   },
   {
@@ -317,6 +348,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11340.jpg"
   },
   {
@@ -327,6 +359,7 @@
     "discount percent": 20,
     "price": 3750000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11325.jpg"
   },
   {
@@ -337,6 +370,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11345.jpg"
   },
   {
@@ -347,6 +381,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11245.jpg"
   },
   {
@@ -357,6 +392,7 @@
     "discount percent": 0,
     "price": 1114000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11250.jpg"
   },
   {
@@ -367,6 +403,7 @@
     "discount percent": 0,
     "price": 874000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11255.jpg"
   },
   {
@@ -377,6 +414,7 @@
     "discount percent": 0,
     "price": 958000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11275.jpg"
   },
   {
@@ -387,6 +425,7 @@
     "discount percent": 10,
     "price": 2145000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11280.jpg"
   },
   {
@@ -397,6 +436,7 @@
     "discount percent": 0,
     "price": 3721000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11295.jpg"
   },
   {
@@ -407,6 +447,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11300.jpg"
   },
   {
@@ -417,6 +458,7 @@
     "discount percent": 0,
     "price": 1254000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11370.jpg"
   },
   {
@@ -427,6 +469,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "no",
     "source": "images/11375.jpg"
   },
   {
@@ -437,6 +480,7 @@
     "discount percent": 0,
     "price": 2340000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11380.jpg"
   },
   {
@@ -447,6 +491,7 @@
     "discount percent": 0,
     "price": 0,
     "Exist": "no",
+    "Immediate delivery": "yes",
     "source": "images/11415.jpg"
   },
   {
@@ -457,6 +502,7 @@
     "discount percent": 0,
     "price": 1000000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11410.jpg"
   },
   {
@@ -467,6 +513,7 @@
     "discount percent": 0,
     "price": 59000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11420.jpg"
   },
   {
@@ -477,6 +524,7 @@
     "discount percent": 0,
     "price": 241000,
     "Exist": "yes",
+    "Immediate delivery": "no",
     "source": "images/11425.jpg"
   },
   {
@@ -487,6 +535,7 @@
     "discount percent": 0,
     "price": 180000,
     "Exist": "yes",
+    "Immediate delivery": "yes",
     "source": "images/11430.jpg"
   }
  ]
