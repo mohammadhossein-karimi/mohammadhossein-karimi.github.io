@@ -12,6 +12,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery.js"></script>
     <title>نوین چرم</title>
     <script>
    
@@ -23,30 +24,490 @@
           let jsd=JSON.parse(xhttp.responseText)
           let op=''
           let oop=''
+         
         for(x in jsd){
           if(jsd[x].price==0){
           op+="<div class='d-none '>"
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
+          op+="کد محصول:"+"<span>"+jsd[x].id+"</span>"+"<br>"
           op+="</div>"
           op+="</div>"
           op+="</div>";
             
-          }else if(jsd[x].price!=0){
+          }else if(jsd[x].price!=0 &&  jsd[x]["discount percent"]==0){
           op+="<div class=' col-6 col-sm-6 col-md-4 col-lg-2'>"
-          op+="<div class='card'>"
+          op+="<div class='card '>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="<span>"+"کد محصول:"+jsd[x].id+"</span>"+"<br>"
+          op+="کد محصول:"+"<span>"+jsd[x].id+"</span>"+"<br>"
           op+="<span>"+"قیمت"+jsd[x].price+'تومان '+"</span>"+"<br>"
           op+="<span>"+"نام محصول:"+jsd[x].subgroup+"</span>"+"<br>"
           op+="</div>"
           op+="</div>"
           op+="</div>";
           }
+          else if(jsd[x]["discount percent"]!=0){
+            var discount=parseInt(jsd[x]["discount percent"])
+            var discount=(discount*jsd[x].price)/100;
+            var result =jsd[x].price-discount;
+          op+="<div class=' col-6 col-sm-6 col-md-4 col-lg-2'>"
+          op+="<div class='card'>"
+          op+="<div class='bg-danger text-white position-absolute d-block rounded-5 redius-reduction'>"+jsd[x]["discount percent"]+"%"+"</div>"
+          op+="<img class='img-fluid' src=images/11210.jpg>"  
+          op+="<div class='card-body'>"
+          op+="کد محصول:"+"<span>"+jsd[x].id+"</span>"+"<br>"
+          op+="<span>قیمت: </span>"+"<span class='text-decoration-line-through'>"+jsd[x].price+'تومان '+"</span>"+"<br>"
+          op+="<span>قیمت: </span>"+"<span class='text-danger'>"+result+'تومان '+"</span>"+"<br>"
+          op+="<span>"+"نام محصول:"+jsd[x].subgroup+"</span>"+"<br>"
+          op+="</div>"
+          op+="</div>"
+          op+="</div>";
+          }
         }
+
+        //آقایان
+        document.querySelector("#collapse5 ul li:nth-child(1)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].gender!="آقایان" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+          for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      //خانم ها
+      document.querySelector("#collapse5 ul li:nth-child(2)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].gender!="خانم ها" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+
+      //کت مردانه
+      document.querySelector("#collapse2 ul li:nth-child(1)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کت-مردانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      document.querySelector("#collapse2 ul li:nth-child(2)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کت-پسرانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      document.querySelector("#collapse2 ul li:nth-child(3)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کیف-کوله" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+
+      document.querySelector("#collapse2 ul li:nth-child(4)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کفش" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse2 ul li:nth-child(5)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کیف-پول" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse2 ul li:nth-child(6)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کلاه-دستکش-مردانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+      
+
+      document.querySelector("#collapse3 ul li:nth-child(1)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کت-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+
+      
+      document.querySelector("#collapse3 ul li:nth-child(2)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کت-دخترانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(3)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کیف-کوله-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(4)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کیف-پول-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(5)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کفش-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(6)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کمربند-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(7)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="کلاه-دستکش-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      document.querySelector("#collapse3 ul li:nth-child(8)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="ست-زنانه" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+
+      
+      document.querySelector("#collapse4 ul li:nth-child(1)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="جلد دسته چک" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+      
+      document.querySelector("#collapse4 ul li:nth-child(2)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="جلد مدارک" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+      
+      document.querySelector("#collapse4 ul li:nth-child(3)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="جا-کلیدی" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+      
+      document.querySelector("#collapse4 ul li:nth-child(4)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="جا کارتی" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+
+      
+      document.querySelector("#collapse4 ul li:nth-child(5)").addEventListener("click",function(){
+          var array=new Array();
+          for(var i=0;i<jsd.length;i++){
+          if(jsd[i].Grouping!="واکس" && jsd[i].Exist=="yes"){
+            array.push(jsd[i].id);
+          }
+        }console.log(array)
+          var all=document.querySelectorAll(".card-body span:nth-child(1)")
+            for (var i=0;i<all.length;i++){
+              all[i].parentNode.parentNode.style.display="block"
+           }
+          for (var i=0;i<all.length;i++){
+           for(var j=0;j<array.length;j++){
+            if(parseInt(all[i].innerHTML)==array[j]){
+             all[i].parentNode.parentNode.style.display="none"
+           }
+          }
+        }
+      })
+      
+      
+      
+
+
+
+
+
+
+
          document.querySelector("#targ").innerHTML=op
          let a=document.querySelectorAll("#targ div img");
          for(var i=0;i<a.length;i++){
@@ -610,11 +1071,6 @@
                                   <li class="list-group-item border border-start-0 border-end-0">کمربند زنانه</li>
                                   <li class="list-group-item border border-start-0 border-end-0">کلاه و دستکش زنانه</li>
                                   <li class="list-group-item border border-start-0 border-end-0">ست زنانه</li>
-                                  <li class="list-group-item border border-start-0 border-end-0">جلد دسته چک</li>
-                                  <li class="list-group-item border border-start-0 border-end-0">جلد مدارک</li>
-                                  <li class="list-group-item border border-start-0 border-end-0">جا کلیدی</li>
-                                  <li class="list-group-item border border-start-0 border-end-0">جا کارتی</li>
-                                  <li class="list-group-item border border-start-0 border-end-0">واکس</li>
                                 </ul>
                           </div>
                         </div>

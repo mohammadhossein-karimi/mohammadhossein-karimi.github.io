@@ -55,6 +55,12 @@
 .background-link{
     background-color: #58595B;
 }
+.redius-reduction{
+    font-size: 15px;
+    padding: 8px 5px;
+    top: 0px;
+    right: 0px;
+}
 
 
 #link-menu a:first-child{
