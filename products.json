@@ -2,7 +2,7 @@
  {
    "id": 11210,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 12450000,
@@ -12,7 +12,7 @@
  {
    "id": 11350,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 20,
    "price": 8652000,
@@ -22,7 +22,7 @@
  {
    "id": 11215,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 0,
@@ -32,7 +32,7 @@
  {
    "id": 11260,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 10,
    "price": 698500,
@@ -42,7 +42,7 @@
  {
    "id": 11270,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 4725000,
@@ -52,7 +52,7 @@
  {
    "id": 11355,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 2995000,
@@ -62,7 +62,7 @@
  {
    "id": 11365,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 0,
@@ -72,7 +72,7 @@
  {
    "id": 11305,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 40,
    "price": 7684000,
@@ -82,7 +82,7 @@
  {
    "id": 11310,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 20,
    "price": 6354000,
@@ -92,7 +92,7 @@
  {
    "id": 11435,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 0,
    "price": 9248000,
@@ -102,7 +102,7 @@
  {
    "id": 11440,
    "gender": "آقایان",
-   "Grouping": "کت-مردانه",
+   "Grouping": "کت مردانه",
    "subgroup": "کت مردانه",
    "discount percent": 30,
    "price": 8475000,
@@ -112,7 +112,7 @@
  {
    "id": 11360,
    "gender": "آقایان",
-   "Grouping": "کت-پسرانه",
+   "Grouping": "کت پسرانه",
    "subgroup": "کت پسرانه",
    "discount percent": 0,
    "price": 0,
@@ -122,7 +122,7 @@
  {
    "id": 11390,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف اداری و فولدر",
    "discount percent": 0,
    "price": 0,
@@ -132,7 +132,7 @@
  {
    "id": 11395,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف اداری و فولدر",
    "discount percent": 0,
    "price": 1100000,
@@ -142,7 +142,7 @@
  {
    "id": 11385,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف کراس بادی",
    "discount percent": 0,
    "price": 900000,
@@ -152,7 +152,7 @@
  {
    "id": 11200,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف اداری و فولدر",
    "discount percent": 0,
    "price": 0,
@@ -162,7 +162,7 @@
  {
    "id": 11225,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف اداری و فولدر",
    "discount percent": 0,
    "price": 2600000,
@@ -172,7 +172,7 @@
  {
    "id": 11230,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کیف اداری و فولدر",
    "discount percent": 0,
    "price": 2420000,
@@ -182,7 +182,7 @@
  {
    "id": 11265,
    "gender": "آقایان",
-   "Grouping": "کیف-کوله",
+   "Grouping": "کیف و کوله",
    "subgroup": "کوله پشتی",
    "discount percent": 0,
    "price": 1598000,
@@ -232,7 +232,7 @@
  {
    "id": 11285,
    "gender": "آقایان",
-   "Grouping": "کلاه-دستکش-مردانه",
+   "Grouping": "کلاه و دستکش مردانه",
    "subgroup": "دستکش مردانه",
    "discount percent": 0,
    "price": 0,
@@ -242,7 +242,7 @@
  {
    "id": 11290,
    "gender": "آقایان",
-   "Grouping": "کلاه-دستکش-مردانه",
+   "Grouping": "کلاه و دستکش مردانه",
    "subgroup": " دستکش مردانه",
    "discount percent": 0,
    "price": 0,
@@ -252,7 +252,7 @@
  {
    "id": 11205,
    "gender": "خانم ها",
-   "Grouping": "کت-زنانه",
+   "Grouping": "کت زنانه",
    "subgroup": "کت زنانه",
    "discount percent": 10,
    "price": 6500000,
@@ -262,7 +262,7 @@
  {
    "id": 11220,
    "gender": "خانم ها",
-   "Grouping": "کت-زنانه",
+   "Grouping": "کت زنانه",
    "subgroup": "کت زنانه",
    "discount percent": 0,
    "price": 0,
@@ -272,7 +272,7 @@
  {
    "id": 11400,
    "gender": "خانم ها",
-   "Grouping": "کت-زنانه",
+   "Grouping": "کت زنانه",
    "subgroup": "کت زنانه",
    "discount percent": 15,
    "price": 3658000,
@@ -282,7 +282,7 @@
  {
    "id": 11405,
    "gender": "خانم ها",
-   "Grouping": "کت-زنانه",
+   "Grouping": "کت زنانه",
    "subgroup": "کت زنانه",
    "discount percent": 0,
    "price": 0,
@@ -292,7 +292,7 @@
  {
    "id": 11330,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "کفش اسپورت زنانه",
    "discount percent": 35,
    "price": 2220000,
@@ -302,7 +302,7 @@
  {
    "id": 11335,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "کفش اسپورت زنانه",
    "discount percent": 10,
    "price": 3614000,
@@ -312,7 +312,7 @@
  {
    "id": 11340,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "بوت و نیم بوت زنانه",
    "discount percent": 0,
    "price": 0,
@@ -322,7 +322,7 @@
  {
    "id": 11325,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "کفش مجلسی",
    "discount percent": 20,
    "price": 3750000,
@@ -332,7 +332,7 @@
  {
    "id": 11345,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "بوت و نیم بوت زنانه",
    "discount percent": 0,
    "price": 0,
@@ -342,7 +342,7 @@
  {
    "id": 11245,
    "gender": "خانم ها",
-   "Grouping": "کفش-زنانه",
+   "Grouping": "کفش زنانه",
    "subgroup": "کفش مجلسی",
    "discount percent": 0,
    "price": 0,
@@ -352,7 +352,7 @@
  {
    "id": 11250,
    "gender": "خانم ها",
-   "Grouping": "کمربند-زنانه",
+   "Grouping": "کمربند زنانه",
    "subgroup": "کمربند زنانه",
    "discount percent": 0,
    "price": 1114000,
@@ -362,7 +362,7 @@
  {
    "id": 11255,
    "gender": "خانم ها",
-   "Grouping": "کلاه-دستکش-زنانه",
+   "Grouping": "کلاه و  دستکش زنانه",
    "subgroup": "دستکش زنانه",
    "discount percent": 0,
    "price": 874000,
@@ -372,7 +372,7 @@
  {
    "id": 11275,
    "gender": "خانم ها",
-   "Grouping": "کلاه-دستکش-زنانه",
+   "Grouping": "کلاه و  دستکش زنانه",
    "subgroup": "دستکش زنانه",
    "discount percent": 0,
    "price": 958000,
@@ -392,7 +392,7 @@
  {
    "id": 11295,
    "gender": "خانم ها",
-   "Grouping": "کت-دخترانه",
+   "Grouping": "کت دخترانه",
    "subgroup": "کت دخترانه",
    "discount percent": 0,
    "price": 3721000,
@@ -402,7 +402,7 @@
  {
    "id": 11300,
    "gender": "خانم ها",
-   "Grouping": "کت-دخترانه",
+   "Grouping": "کت دخترانه",
    "subgroup": "کت دخترانه",
    "discount percent": 0,
    "price": 0,
@@ -412,7 +412,7 @@
  {
    "id": 11370,
    "gender": "خانم ها",
-   "Grouping": "کیف-کوله-زنانه",
+   "Grouping": "کیف و کوله زنانه",
    "subgroup": "کیف اداری و فولدر زنانه",
    "discount percent": 0,
    "price": 1254000,
@@ -422,7 +422,7 @@
  {
    "id": 11375,
    "gender": "خانم ها",
-   "Grouping": "کیف-کوله-زنانه",
+   "Grouping": "کیف و کوله زنانه",
    "subgroup": "کیف اداری و فولدر زنانه",
    "discount percent": 0,
    "price": 0,
@@ -432,7 +432,7 @@
  {
    "id": 11380,
    "gender": "خانم ها",
-   "Grouping": "کیف-پول-زنانه",
+   "Grouping": "کیف پول زنانه",
    "subgroup": "کیف پول زنانه",
    "discount percent": 0,
    "price": 2340000,
@@ -442,7 +442,7 @@
  {
    "id": 11415,
    "gender": "خانم ها",
-   "Grouping": "کیف-پول-زنانه",
+   "Grouping": "کیف پول زنانه",
    "subgroup": "کیف پول زنانه",
    "discount percent": 0,
    "price": 0,
