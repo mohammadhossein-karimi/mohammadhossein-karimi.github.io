@@ -1,4 +1,70 @@
 
+#total{
+    background-color: #b9eeee;
+    position: fixed;
+    right: 80px;
+    bottom: 40px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+#instalments{
+    position: fixed;
+    right: 50vh;
+    bottom: 40px;
+    width: 50px;
+}
+#instalments button{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 130px;
+}
+
+#instalments button:hover{
+    background-color: #0b5d5d;
+    border: none;
+    transition: all 0.5s;
+}
+#basket_shopping div ul{
+    background-color: #4dcca0;
+    display: inline;
+    padding:5px;
+    border-radius: 10px;
+    width: 600px;
+}
+#basket_shopping div ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#basket_shopping div ul li:nth-child(3) i, div ul li:nth-child(4) i{
+    color: #07622c;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+#basket_shopping div ul li:nth-child(3) i:hover,li:nth-child(4) i:hover{
+    cursor: pointer;
+    color: red;
+    transition: all 1s;
+}
+
+#basket_shopping div ul li:nth-child(3) div{
+    background-color: rgb(133, 46, 46)!important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0;
+    display: inline-block;
+    
+}
+
+
 #link-hover:hover{
     color: red!important;
     transition: all 0.3s linear;
@@ -153,6 +219,9 @@
 
 }
 @media all and (min-width:768px) and (max-width:991px){
+    .offcanvas{
+        --bs-offcanvas-width: 600px;
+    }
 .dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;
@@ -194,6 +263,9 @@
 
 }
 @media all and (min-width:1400px){
+    .offcanvas{
+        --bs-offcanvas-width: 600px;
+    }
 .dropdown:hover .dropdown-menu{
         display: inline-block;
         position: absolute;

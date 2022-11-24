@@ -26,7 +26,7 @@
          
         for(x in jsd){
           if(jsd[x].price==0){
-          op+="<div class='d-none col-6 col-sm-6 col-md-4 col-lg-2'>"
+          op+="<div class=' col-6 col-sm-6 col-md-4 col-lg-2'>"
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
@@ -44,10 +44,9 @@
           op+="<div class='card '>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="<sapn class='d-inline-block'>کد محصول:</span>" 
-          op+="<span class='d-inline-block'>"+jsd[x].id+"</span>"
-          op+="<span class='d-inline-block'>"+"قیمت"+jsd[x].price+'تومان '+"</span>"
-          op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
+          op+="کد محصول:"+"<span class='d-inline-block'>"+jsd[x].id+"</span>"
+          op+="قیمت"+"<span >"+jsd[x].price+"</span>"+"تومان "
+          op+="نام محصول:"+"<span class='d-inline-block'>"+jsd[x].subgroup+"</span>"
           op+="<button onClick=button() >اضافه کردن به سبد خرید</button>"
           op+="</div>"
           op+="</div>"
@@ -65,7 +64,7 @@
           op+="<div class='card-body'>"
           op+="<sapn class='d-inline-block'>کد محصول:</span>" 
           op+="<span class='d-inline-block'>"+jsd[x].id+"</span>"
-          op+="<span class='text-decoration-line-through'>"+"قیمت:"+jsd[x].price+'تومان '+"</span>"
+          op+="<a class='text-decoration-line-through'>"+"قیمت:"+jsd[x].price+'تومان '+"</a>"
           op+="<span class='d-inline-block'>"+"قیمت:"+"<a class='text-danger d-inline-block '>"+result+'تومان '+"</a>"
           op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
           op+="<button onClick=button() >اضافه کردن به سبد خرید</button>"
@@ -391,11 +390,9 @@ fetch("products.json")
                   </div>
                 </div>
                 <div class="offcanvas-body" id="basket_shopping">
-                 <div class="text-center p-5">
-                     <i class="bi bi-basket3-fill fs-1 color-basket-icon"></i><br>
-                      <p class="fs-4 color-basket-icon">سبد خرید شما خالی است</p><br>
-                      <a class="text-decoration-none text-white p-2 mt-2 background-link custom-font-footer" href="#">رفتن به فروشگاه آنلاین</a>
-                 </div>
+                  <div id="total">مجموع:<span>0</span>تومان</div>
+                  <div id="instalments"><button> پرداخت اقساط</button></div>
+                 <div id="table_instalments"></div>
                 </div>
               </div>
             </a>
@@ -982,9 +979,19 @@ fetch("products.json")
         </div>
       </div>
     </div>
- 
+    
     <div class="col-10 col-sm-10 col-md-10 col-lg-10">
       <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option class="m-5">ارزان ترین</option>
+              <option class="m-5">گران ترین</option>
+              <option class="m-5">جدید ترین</option>
+              <option class="m-5">پیشنهاد خریداران</option>
+            </select>
+          </div>
+        </div>
         <div class="row" id="targ">
          
           </div>
@@ -1059,14 +1066,112 @@ fetch("products.json")
 
   
 <script>
+
   function button(){
+    let d=new Date();
+    function addMonths(date, months) {
+    var d = date.getDate();
+    date.setMonth(date.getMonth() + +months);
+    if (date.getDate() != d) {
+      date.setDate(0);
+    }
+    return date;
+}
+    document.querySelector("#basket_shopping").innerHTML+=
+    '<div>'
+        +'<ul>'
+        +'<li>'+'نام محصول '+event.target.previousSibling.innerHTML+'</li>'
+        +'<li>'+'قیمت: '+event.target.previousSibling.previousElementSibling.innerHTML+'</li>'
+        +'<li>'+'<i class="bi bi-dash">'+'</i>'+'<div>'+0+'</div>'+'<i class="bi bi-plus">'+'</i>'+'</li>'
+        +'<li>'+'<i class="bi bi-x">'+'</i>'+'</li>'+
+        '</ul>'+
+    '</div>';
+
+    var minus =document.querySelectorAll("#basket_shopping ul li:nth-child(3) i:nth-of-type(1)");
+    minus.forEach(q =>q.addEventListener("click",function(event){
+     
+        var temp1 =event.target.nextSibling.innerHTML;
+        parseInt(temp1);
+        temp1--;
+        if(temp1<0){
+            temp=0;
+        }else{
+        event.target.nextSibling.innerHTML=temp1;
+        var temp2=event.target.parentNode.previousSibling;
+        var temp4=parseInt(temp2.innerHTML.substring(6,temp2.length));
+        var temp5=document.querySelector("#total span").innerHTML;
+        temp5=parseInt(temp5);
+        document.querySelector("#total span").innerHTML=temp5-(1*temp4);
+        }
+
+    }));
+
+    var plus =document.querySelectorAll('#basket_shopping ul li:nth-child(3) i:nth-of-type(2)');
+    plus.forEach(w =>w.addEventListener("click",function(event){
+        var temp2 =event.target.previousSibling.innerHTML;
+        temp2++;
+        event.target.previousSibling.innerHTML=temp2
+        //محتوای بخش سفید
+        var temp3=event.target.parentNode.previousSibling.innerHTML;
+        //قیمت محصول
+        var temp4=parseInt(temp3.substring(6,temp3.length));
+        var temp5=document.querySelector("#total span").innerHTML;
+        temp5=parseInt(temp5)
+        document.querySelector("#total span").innerHTML=temp5+(1*temp4);
+
+    }));
+
+    var close =document.querySelectorAll('#basket_shopping ul li:nth-child(4) i');
+    close.forEach(q =>q.addEventListener("click",function(event){
+        var parent=event.target.parentNode.parentNode.parentNode;
+        var child=event.target.parentNode.parentNode;
+        parent.removeChild(child);
+        var number=event.target.parentNode.previousSibling.querySelector("div").innerHTML;
+        var value=child.querySelector("ul li:nth-child(2)").innerHTML;
+        value=value.substring(6,value.length-1);
+        value=parseInt(value)
+        value=value*number;
+        document.querySelector("#total span").innerHTML=document.querySelector("#total span").innerHTML-value;
+       
+    }));
+    var date_temp=d.toLocaleDateString();
+    date_temp=date_temp.replaceAll("/",",");
+    var date_instalments=addMonths(new Date(date_temp),0)
+
+    document.querySelector("#instalments button").addEventListener("click",function(){
+    var month=parseInt(prompt("Enter the number of monthly installments"));
+    money=document.querySelector("#total span").innerHTML;
+    var temp=(money/month);
+    //create pay instalments table
+    var op1="";
+    op1+="<table style='border:2px solid black; width:500px ;text-align:center;'>"
+    op1+="<tr>"
+    op1+='<th style="border:2px solid black;font-size: 20px;">No</th>'
+    op1+='<th style="border:2px solid black;font-size: 20px;" >'+"date"+'</th>'
+    op1+='<th style="border:2px solid black;font-size: 20px;">'+"money"+'</th>'
+    op1+="</tr>";
     
-    var temp=document.querySelectorAll('#targ button')
-    temp.forEach(i =>i.addEventListener("click",function(){
-    document.querySelector("#").innerHTML+="sa"
+    for(var k=1;k<=month;k++){
+        money=(money-temp).toFixed(2);
+        if(money<0){
+            money=0;
+        }
+        date_temp=date_instalments.toLocaleDateString().replaceAll("/",",");
+        date_instalments=addMonths(new Date(date_temp),1);
+        op1+="<tr style='border:2px solid black'>"
+        op1+="<td style='border:1px solid black' >"+k
+        op1+="</td>"
+        op1+="<td style='border:1px solid black'>"+date_instalments.toLocaleDateString()
+        op1+="</td>"
+        op1+="<td style='border:1px solid black'>"+money
+        op1+="</td>"
+        op1+="</tr>";
+
+    }
+    op1+="</table>"
     
-    }))
-    console.log(temp[1])
+     document.querySelector("#table_instalments").innerHTML+=op1
+    });
   }
 </script>
 
