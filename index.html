@@ -30,10 +30,9 @@
           op+="<div class='card'>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="<sapn class='d-inline-block'>کد محصول:</span>"  
-          op+="<span class='d-inline-block'>"+jsd[x].id+"</span>"
-          op+="<span class='d-inline-block'>"+"قیمت"+jsd[x].price+'تومان '+"</span>"
-          op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
+          op+="کد محصول:"+"<span class='d-inline-block'>"+jsd[x].id+"</span>"
+          op+="قیمت"+"<span >"+jsd[x].price+"</span>"+"تومان "
+          op+="نام محصول:"+"<span class='d-inline-block'>"+jsd[x].subgroup+"</span>"
           op+="</div>"
           op+="</div>"
           op+="</div>";
@@ -62,8 +61,7 @@
           op+="<div class='bg-danger text-white position-absolute d-block rounded-5 redius-reduction'>"+jsd[x]["discount percent"]+"%"+"</div>"
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
-          op+="<sapn class='d-inline-block'>کد محصول:</span>" 
-          op+="<span class='d-inline-block'>"+jsd[x].id+"</span>"
+          op+="کد محصول:"+"<span class='d-inline-block'>"+jsd[x].id+"</span>"
           op+="<a class='text-decoration-line-through'>"+"قیمت:"+jsd[x].price+'تومان '+"</a>"
           op+="<span class='d-inline-block'>"+"قیمت:"+"<a class='text-danger d-inline-block '>"+result+'تومان '+"</a>"
           op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
@@ -76,6 +74,7 @@
         
       var check=document.querySelectorAll("#checkBox_division input[type=checkboX]")
       check.forEach(elem => elem.addEventListener('change',function(){
+        console.log(check[0].checked,check[1].checked,check[2].checked)
         filter(check[0].checked,check[1].checked,check[2].checked)
       }))
       
@@ -215,128 +214,151 @@ fetch("products.json")
   
     var all=document.querySelectorAll(".card-body span:nth-child(1)")
     for (var i=0;i<all.length;i++){
-        all[i].parentNode.parentNode.parentNode.parentNode.style.display="block"
+        all[i].parentNode.parentNode.parentNode.style.display="block"
      } 
      console.log(all.length,array.length)
     for (var i=0;i<all.length;i++){
      for(var j=0;j<array.length;j++){
       
       if(parseInt(all[i].innerHTML)==array[j]){
-       all[i].parentNode.parentNode.parentNode.parentNode.style.display="none"
+        console.log(all[i])
+       all[i].parentNode.parentNode.parentNode.style.display="none"
      }
     }
   }
 })
 }
 function filter(check1,check2,check3){
-  var a,b,c;
 var array=new Array();
 fetch("products.json")
     .then(response => response.json())
     .then( data => {
-
-      if(check1){
-        a="yes"
-      }else{
-        a="no"
-      }
-
-      if(check2){
-        b="yes"
-      }else{
-        b="no"
-      }
-
-
-
-      if(check1){
+      //FFF
+      if(check1==false && check2==false && check3==false){
+        console.log(1)
         var i=-1;
         while( i<data.length-1){
           i++; 
-         if(data[i][["Immediate delivery"]]!=a){
+         if(data[i][["Immediate delivery"]]=="no" && data[i].Exist=="no" && data[i]["discount percent"]==0){
+         
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-      if(check2){
+      //FFT
+      else if(check1==false && check2==false && check3==true){
+       
         var i=-1;
         while( i<data.length-1){
           i++; 
-         if(data[i].Exist!=b){
+         if(data[i][["Immediate delivery"]]=="no" && data[i].Exist=="yes" && data[i]["discount percent"]!=0){
+         
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-      if(check3){
+      //FTF
+      else if(check2==true && check1==false && check3==false){
+        console.log(3)
         var i=-1;
         while( i<data.length-1){
           i++; 
-         if(data[i]["discount percent"]==0){
+         if(data[i].Exist=="yes" &&  data[i]["Immediate delivery"]=="no" && data[i]["discount percent"]==0){
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-
-      if(check1 && check2){
+      //FTT
+      else if(check1==false && check2==true && check3==true){
+        console.log(4)
         var i=-1;
         while( i<data.length-1){
           i++; 
-          //console.log(typeof data[i]["discount percent"],typeof c)
-         if(data[i][["Immediate delivery"]]!=a && data[i].Exist!=b){
+         if(data[i][["Immediate delivery"]]=="no" && data[i].Exist=="yes" && data[i]["discount percent"]!=0){
+         
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-
-
-      if(check1 && check3){
+      //TFF
+      else if(check1==true && check2==false && check3==false){
+        console.log(5)
         var i=-1;
         while( i<data.length-1){
           i++; 
-          //console.log(typeof data[i]["discount percent"],typeof c)
-         if(data[i][["Immediate delivery"]]!=a && data[i]["discount percent"]==0){
+         if(data[i][["Immediate delivery"]]=="yes" && data[i].Exist=="no" && data[i]["discount percent"]==0){
+         
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-
-
-      if(check2 && check3){
+      //TFT
+      else if(check1==true && check2==false && check3==true){
+        console.log(6)
         var i=-1;
         while( i<data.length-1){
           i++; 
-          //console.log(typeof data[i]["discount percent"],typeof c)
-         if(data[i].Exist!=b && data[i]["discount percent"]==0){
+         if(data[i][["Immediate delivery"]]=="yes" && data[i].Exist=="no" && data[i]["discount percent"]==0){
+       
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
-
-
-
-      if(check1 && check2 && check3){
+      //TTF
+      else if(check1==true && check2==true && check3==false){
+        console.log(7)
         var i=-1;
         while( i<data.length-1){
           i++; 
-          //console.log(typeof data[i]["discount percent"],typeof c)
-         if(data[i][["Immediate delivery"]]!=a && data[i].Exist!=b && data[i]["discount percent"]==0){
+         if(data[i][["Immediate delivery"]]=="yes" && data[i].Exist=="yes" && data[i]["discount percent"]==0){
+        
+         }
+         else{
           array.push(data[i].id);
          }
-        }  
+        }
       }
+      //TTT
+      else if(check1==true && check2==true && check3==true){
+        console.log(8)
+        var i=-1;
+        while( i<data.length-1){
+          i++; 
+         if(data[i][["Immediate delivery"]]=="yes" && data[i].Exist=="yes" && data[i]["discount percent"]!=0){
+          
+         }
+         else{
+          array.push(data[i].id);
+         }
+        }
+      }
+      
+
+
       var all=document.querySelectorAll(".card-body span:nth-child(1)")
     for (var i=0;i<all.length;i++){
-        all[i].parentNode.parentNode.parentNode.parentNode.style.display="block"
+        all[i].parentNode.parentNode.parentNode.style.display="block"
      }
     for (var i=0;i<array.length;i++){
      for(var j=0;j<all.length;j++){
-      //console.log(parseInt(all[j].innerHTML),array[i])
       if(parseInt(all[j].innerHTML)==array[i]){
-       all[j].parentNode.parentNode.parentNode.parentNode.style.display="none"
+       all[j].parentNode.parentNode.parentNode.style.display="none"
      }
     }
   }
-    })
+})
   
   }
 
