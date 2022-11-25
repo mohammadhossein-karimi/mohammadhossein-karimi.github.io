@@ -62,8 +62,8 @@
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
           op+="کد محصول:"+"<span class='d-inline-block'>"+jsd[x].id+"</span>"
-          op+="قیمت"+"<span class='text-decoration-line-through text-danger' >"+jsd[x].price+"</span>"+"تومان "
-          op+="قیمت"+"<a class=' text-success text-decoration-none'>"+result+"</a>"+"تومان "
+          op+="قیمت"+"<a class='text-decoration-line-through text-danger' >"+jsd[x].price+"</a>"+"تومان "
+          op+="قیمت"+"<span class=' text-success text-decoration-none'>"+result+"</span>"+"تومان "
           op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
           op+="<button onClick=button() >اضافه کردن به سبد خرید</button>"
           op+="</div>"
@@ -167,26 +167,29 @@
         var all=document.querySelectorAll(".card-body span:nth-of-type(3)")
         var array1=new Array();
     document.querySelector("#area_selected").addEventListener('change',function(){
-        for(var i=0;i<jsd.length;i++){
-          array1.push(jsd[i].price)
+        for(var i=0;i<all.length;i++){
+          if(jsd[i].Exist=="yes"){
+            array1.push(parseInt(all[i].previousElementSibling.innerHTML))
+          }
         }
         array1.sort(function(a,b){
           return b-a;
         })
-  
+        //console.log(array1)
+        document.querySelector("#targ").innerHTML=""
         for(var i=0 ;i<array1.length;i++){
           for(var j=0;j<all.length;j++){
           
-            if(all[j].previousElementSibling.innerHTML==array1[i]){ 
-               console.log(all[j].previousElementSibling.innerHTML,array1[i])
-              //console.log(1)
+            if(parseInt( all[j].previousElementSibling.innerHTML)===array1[i]){ 
+              console.log(all[j].parentNode.parentNode.parentNode)
+               document.querySelector("#targ").innerHTML+=all[j].parentNode.parentNode.parentNode.innerHTML
+               
             }
           }
         }
-  })
-        }
-        
-      }
+      })
+    }   
+  }
       
         xhttp.open('GET','products.json',true)
         xhttp.send()
