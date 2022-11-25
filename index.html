@@ -62,8 +62,8 @@
           op+="<img class='img-fluid' src=images/11210.jpg>"  
           op+="<div class='card-body'>"
           op+="کد محصول:"+"<span class='d-inline-block'>"+jsd[x].id+"</span>"
-          op+="<a class='text-decoration-line-through'>"+"قیمت:"+jsd[x].price+'تومان '+"</a>"
-          op+="<span class='d-inline-block'>"+"قیمت:"+"<a class='text-danger d-inline-block '>"+result+'تومان '+"</a>"
+          op+="قیمت"+"<span class='text-decoration-line-through text-danger' >"+jsd[x].price+"</span>"+"تومان "
+          op+="قیمت"+"<a class=' text-success text-decoration-none'>"+result+"</a>"+"تومان "
           op+="<span class='d-inline-block'>"+"نام محصول:"+jsd[x].subgroup+"</span>"
           op+="<button onClick=button() >اضافه کردن به سبد خرید</button>"
           op+="</div>"
@@ -164,10 +164,34 @@
          for(var i=0;i<a.length;i++){
           a[i].src=jsd[i].source
          }
+        var all=document.querySelectorAll(".card-body span:nth-of-type(3)")
+        var array1=new Array();
+    document.querySelector("#area_selected").addEventListener('change',function(){
+        for(var i=0;i<jsd.length;i++){
+          array1.push(jsd[i].price)
         }
+        array1.sort(function(a,b){
+          return b-a;
+        })
+  
+        for(var i=0 ;i<array1.length;i++){
+          for(var j=0;j<all.length;j++){
+          
+            if(all[j].previousElementSibling.innerHTML==array1[i]){ 
+               console.log(all[j].previousElementSibling.innerHTML,array1[i])
+              //console.log(1)
+            }
+          }
+        }
+  })
+        }
+        
       }
+      
         xhttp.open('GET','products.json',true)
         xhttp.send()
+
+       
     })
    
 </script>
@@ -355,12 +379,11 @@ fetch("products.json")
      for(var j=0;j<all.length;j++){
       if(parseInt(all[j].innerHTML)==array[i]){
        all[j].parentNode.parentNode.parentNode.style.display="none"
-     }
+       }
+      }
     }
-  }
-})
-  
-  }
+  })
+}
 
 </script>
 
@@ -1006,9 +1029,9 @@ fetch("products.json")
       <div class="container-fluid">
         <div class="row">
           <div class="col-4">
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="area_selected">
+              <option class="m-5" id="area_selected">گران ترین</option>
               <option class="m-5">ارزان ترین</option>
-              <option class="m-5">گران ترین</option>
               <option class="m-5">جدید ترین</option>
               <option class="m-5">پیشنهاد خریداران</option>
             </select>
@@ -1196,5 +1219,6 @@ fetch("products.json")
     });
   }
 </script>
+
 
 </html>
