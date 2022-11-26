@@ -8,7 +8,10 @@
    "price": 12450000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11210.jpg"
+   "source": "images/11210.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "black"
  },
  {
    "id": 11350,
@@ -19,7 +22,10 @@
    "price": 8652000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11350.jpg"
+   "source": "images/11350.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "brown"
  },
  {
    "id": 11215,
@@ -30,7 +36,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11215.jpg"
+   "source": "images/11215.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11260,
@@ -41,7 +50,10 @@
    "price": 698500,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11260.jpg"
+   "source": "images/11260.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "brown"
  },
  {
    "id": 11270,
@@ -52,7 +64,10 @@
    "price": 4725000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11270.jpg"
+   "source": "images/11270.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11355,
@@ -63,7 +78,10 @@
    "price": 2995000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11355.jpg"
+   "source": "images/11355.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "brown"
  },
  {
    "id": 11365,
@@ -74,7 +92,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11365.jpg"
+   "source": "images/11365.jpg",
+   "sugested": "no",
+   "date": "14/26/2022",
+   "color": "black"
  },
  {
    "id": 11305,
@@ -85,7 +106,10 @@
    "price": 7684000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11305.jpg"
+   "source": "images/11305.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11310,
@@ -96,7 +120,10 @@
    "price": 6354000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11310.jpg"
+   "source": "images/11310.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11435,
@@ -107,7 +134,10 @@
    "price": 9248000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11435.jpg"
+   "source": "images/11435.jpg",
+   "sugested": "yes",
+   "date": "11/26/2021",
+   "color": "brown"
  },
  {
    "id": 11440,
@@ -118,7 +148,10 @@
    "price": 8475000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11440.jpg"
+   "source": "images/11440.jpg",
+   "sugested": "yes",
+   "date": "6/27/2022",
+   "color": "darkblue"
  },
  {
    "id": 11360,
@@ -129,7 +162,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11360.jpg"
+   "source": "images/11360.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11390,
@@ -140,7 +176,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11390.jpg"
+   "source": "images/11390.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "black"
  },
  {
    "id": 11395,
@@ -151,7 +190,10 @@
    "price": 1100000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11395.jpg"
+   "source": "images/11395.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11385,
@@ -162,7 +204,10 @@
    "price": 900000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11385.jpg"
+   "source": "images/11385.jpg",
+   "sugested": "yes",
+   "date": "7/26/2018",
+   "color": "darkblue"
  },
  {
    "id": 11200,
@@ -173,7 +218,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11200.jpg"
+   "source": "images/11200.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "brown"
  },
  {
    "id": 11225,
@@ -184,7 +232,10 @@
    "price": 2600000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11225.jpg"
+   "source": "images/11225.jpg",
+   "sugested": "yes",
+   "date": "10/28/2021",
+   "color": "darkblue"
  },
  {
    "id": 11230,
@@ -195,7 +246,10 @@
    "price": 2420000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11230.jpg"
+   "source": "images/11230.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11265,
@@ -206,7 +260,10 @@
    "price": 1598000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11265.jpg"
+   "source": "images/11265.jpg",
+   "sugested": "yes",
+   "date": "11/26/2020",
+   "color": "black"
  },
  {
    "id": 11235,
@@ -217,7 +274,10 @@
    "price": 2478000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11235.jpg"
+   "source": "images/11235.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11315,
@@ -228,7 +288,10 @@
    "price": 3650000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11315.jpg"
+   "source": "images/11315.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11320,
@@ -239,7 +302,10 @@
    "price": 3145000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11320.jpg"
+   "source": "images/11320.jpg",
+   "sugested": "yes",
+   "date": "11/26/2019",
+   "color": "brown"
  },
  {
    "id": 11240,
@@ -250,7 +316,10 @@
    "price": 2870000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11240.jpg"
+   "source": "images/11240.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11285,
@@ -261,7 +330,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11285.jpg"
+   "source": "images/11285.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11290,
@@ -272,7 +344,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11290.jpg"
+   "source": "images/11290.jpg",
+   "sugested": "no",
+   "date": "3/17/2020",
+   "color": "black"
  },
  {
    "id": 11205,
@@ -283,7 +358,10 @@
    "price": 6500000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11205.jpg"
+   "source": "images/11205.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11220,
@@ -294,7 +372,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11220.jpg"
+   "source": "images/11220.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11400,
@@ -305,7 +386,10 @@
    "price": 3658000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11400.jpg"
+   "source": "images/11400.jpg",
+   "sugested": "yes",
+   "date": "5/21/2022",
+   "color": "brown"
  },
  {
    "id": 11405,
@@ -316,7 +400,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11405.jpg"
+   "source": "images/11405.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11330,
@@ -327,7 +414,10 @@
    "price": 2220000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11330.jpg"
+   "source": "images/11330.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11335,
@@ -338,7 +428,10 @@
    "price": 3614000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11335.jpg"
+   "source": "images/11335.jpg",
+   "sugested": "yes",
+   "date": "12/18/2017",
+   "color": "black"
  },
  {
    "id": 11340,
@@ -349,7 +442,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11340.jpg"
+   "source": "images/11340.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11325,
@@ -360,7 +456,10 @@
    "price": 3750000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11325.jpg"
+   "source": "images/11325.jpg",
+   "sugested": "yes",
+   "date": "11/2/2021",
+   "color": "brown"
  },
  {
    "id": 11345,
@@ -371,7 +470,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11345.jpg"
+   "source": "images/11345.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11245,
@@ -382,7 +484,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11245.jpg"
+   "source": "images/11245.jpg",
+   "sugested": "no",
+   "date": "8/9/2022",
+   "color": "darkblue"
  },
  {
    "id": 11250,
@@ -393,7 +498,10 @@
    "price": 1114000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11250.jpg"
+   "source": "images/11250.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "black"
  },
  {
    "id": 11255,
@@ -404,7 +512,10 @@
    "price": 874000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11255.jpg"
+   "source": "images/11255.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11275,
@@ -415,7 +526,10 @@
    "price": 958000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11275.jpg"
+   "source": "images/11275.jpg",
+   "sugested": "yes",
+   "date": "4/30/2022",
+   "color": "darkblue"
  },
  {
    "id": 11280,
@@ -426,7 +540,10 @@
    "price": 2145000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11280.jpg"
+   "source": "images/11280.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "brown"
  },
  {
    "id": 11295,
@@ -437,7 +554,10 @@
    "price": 3721000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11295.jpg"
+   "source": "images/11295.jpg",
+   "sugested": "yes",
+   "date": "12/26/2021",
+   "color": "darkblue"
  },
  {
    "id": 11300,
@@ -448,7 +568,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11300.jpg"
+   "source": "images/11300.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "black"
  },
  {
    "id": 11370,
@@ -459,7 +582,10 @@
    "price": 1254000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11370.jpg"
+   "source": "images/11370.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11375,
@@ -470,7 +596,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "no",
-   "source": "images/11375.jpg"
+   "source": "images/11375.jpg",
+   "sugested": "no",
+   "date": "2/25/2022",
+   "color": "darkblue"
  },
  {
    "id": 11380,
@@ -481,7 +610,10 @@
    "price": 2340000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11380.jpg"
+   "source": "images/11380.jpg",
+   "sugested": "yes",
+   "date": "1/26/2022",
+   "color": "brown"
  },
  {
    "id": 11415,
@@ -492,7 +624,10 @@
    "price": 0,
    "Exist": "no",
    "Immediate delivery": "yes",
-   "source": "images/11415.jpg"
+   "source": "images/11415.jpg",
+   "sugested": "no",
+   "date": "11/26/2022",
+   "color": "darkblue"
  },
  {
    "id": 11410,
@@ -503,7 +638,10 @@
    "price": 1000000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11410.jpg"
+   "source": "images/11410.jpg",
+   "sugested": "yes",
+   "date": "3/26/2022",
+   "color": "black"
  },
  {
    "id": 11420,
@@ -514,7 +652,10 @@
    "price": 59000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11420.jpg"
+   "source": "images/11420.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": "black"
  },
  {
    "id": 11425,
@@ -525,7 +666,10 @@
    "price": 241000,
    "Exist": "yes",
    "Immediate delivery": "no",
-   "source": "images/11425.jpg"
+   "source": "images/11425.jpg",
+   "sugested": "yes",
+   "date": "6/16/2022",
+   "color": "blue"
  },
  {
    "id": 11430,
@@ -536,6 +680,9 @@
    "price": 180000,
    "Exist": "yes",
    "Immediate delivery": "yes",
-   "source": "images/11430.jpg"
+   "source": "images/11430.jpg",
+   "sugested": "yes",
+   "date": "11/26/2022",
+   "color": ""
  }
 ]
