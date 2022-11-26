@@ -1,6 +1,29 @@
 .card{
     font-size: 15px;
+    height: 500px;
+    margin-bottom: 20px;
 }
+.card:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    transition: all 0.5s;
+}
+.card button{
+    border:none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #32c06b;
+    
+}
+.card button:hover{
+    background-color: #07622c;
+    transition: all 0.5s;
+}
+#collapse2 #collapse3 #collapse4  li {
+    cursor: pointer;
+}
+
+
 .wrapper {
     background: #fff;
     border-radius: 5px;
