@@ -9,6 +9,7 @@
     transition: all 0.5s;
 }
 .card button{
+    display: block;
     border:none;
     border-radius: 10px;
     padding: 5px;
